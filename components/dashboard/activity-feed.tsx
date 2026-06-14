@@ -44,6 +44,17 @@ const TONE: Record<ActivityType, string> = {
   info: "bg-secondary text-secondary-foreground",
 };
 
+/** A repeated farm re-clear of the same stage collapses into one row (×N).
+ * Returns a stable key for such events, or null for everything else. */
+function farmGroupKey(e: ActivityEventRow): string | null {
+  if (e.type !== "stage_cleared" && e.type !== "boss_cleared") return null;
+  const d = e.data;
+  if (!d || typeof d !== "object" || Array.isArray(d)) return null;
+  const meta = d as { farm?: unknown; stageKey?: unknown };
+  if (meta.farm !== true) return null;
+  return `${e.type}:${typeof meta.stageKey === "number" ? meta.stageKey : "?"}`;
+}
+
 export function ActivityFeed({ events }: { events: ActivityEventRow[] }) {
   if (events.length === 0) {
     return (
@@ -53,9 +64,22 @@ export function ActivityFeed({ events }: { events: ActivityEventRow[] }) {
     );
   }
 
+  // Events arrive newest-first; collapse adjacent identical farm clears so a long
+  // farming session reads "เคลียร์ 3-5 ×12" instead of flooding the feed.
+  const groups: { event: ActivityEventRow; count: number }[] = [];
+  for (const e of events) {
+    const k = farmGroupKey(e);
+    const last = groups[groups.length - 1];
+    if (k && last && farmGroupKey(last.event) === k) {
+      last.count += 1;
+    } else {
+      groups.push({ event: e, count: 1 });
+    }
+  }
+
   return (
     <ol className="space-y-1">
-      {events.map((e) => {
+      {groups.map(({ event: e, count }) => {
         const Icon = ICONS[e.type] ?? Info;
         return (
           <li key={e.id} className="flex items-start gap-3 rounded-lg px-1 py-2">
@@ -68,7 +92,14 @@ export function ActivityFeed({ events }: { events: ActivityEventRow[] }) {
               <Icon className="h-4 w-4" />
             </span>
             <div className="min-w-0 flex-1">
-              <p className="text-sm font-medium leading-tight">{e.title}</p>
+              <p className="text-sm font-medium leading-tight">
+                {e.title}
+                {count > 1 ? (
+                  <span className="ml-1.5 rounded bg-muted px-1.5 py-0.5 text-xs font-semibold tabular-nums text-muted-foreground">
+                    ×{count}
+                  </span>
+                ) : null}
+              </p>
               {e.description ? (
                 <p className="truncate text-xs text-muted-foreground">{e.description}</p>
               ) : null}

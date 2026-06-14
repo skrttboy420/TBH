@@ -161,6 +161,46 @@ def _activity_stage(prev: dict, curr: dict) -> list[dict]:
     ]
 
 
+def _activity_farm_clear(prev: dict, curr: dict) -> list[dict]:
+    """Detect a farm *re-clear* of the same stage via a wave reset.
+
+    While farming, the same stage repeats: ``currentStageWave`` climbs (1→~13)
+    then drops back near 1 the moment the stage is cleared and the next round
+    starts. ``maxCompletedStage`` does NOT move during farming (it only tracks
+    the highest stage ever reached), so ``_activity_stage`` stays silent — the
+    wave reset is the only clear signal the save exposes.
+
+    Guards:
+      • same stage only (currentStageKey unchanged) — a stage *change* is
+        progression, handled by ``_activity_stage``;
+      • maxCompletedStage unchanged — avoids double-counting the one diff where a
+        brand-new highest stage is cleared (``_activity_stage`` owns that).
+
+    Best-effort: one event per detected reset. The save has no per-stage clear
+    counter, so several clears between two polls collapse into a single event.
+    """
+    key = int(curr.get("currentStageKey", 0) or 0)
+    if key <= 0 or int(prev.get("currentStageKey", 0) or 0) != key:
+        return []
+    if int(curr.get("maxCompletedStage", 0) or 0) != int(prev.get("maxCompletedStage", 0) or 0):
+        return []
+    prev_wave = int(prev.get("currentStageWave", 0) or 0)
+    curr_wave = int(curr.get("currentStageWave", 0) or 0)
+    if prev_wave < 2 or curr_wave >= prev_wave:
+        return []
+    d = decode_stage(key)
+    is_boss = bool(d and d["isBoss"])
+    label = stage_full_label_th(key)
+    return [
+        {
+            "type": "boss_cleared" if is_boss else "stage_cleared",
+            "title": f"เคลียร์บอส {label}" if is_boss else f"เคลียร์ {label}",
+            "description": None,
+            "data": {"stageKey": key, "farm": True, "wave": prev_wave},
+        }
+    ]
+
+
 def _activity_levelups(prev: dict, curr: dict) -> list[dict]:
     pm = {int(h["heroKey"]): int(h["level"]) for h in prev.get("heroes", [])}
     events: list[dict] = []
@@ -228,6 +268,7 @@ def diff_saves(prev: dict | None, curr: dict) -> tuple[list[dict], list[dict]]:
     )
     activity = (
         _activity_stage(prev, curr)
+        + _activity_farm_clear(prev, curr)
         + _activity_levelups(prev, curr)
         + _activity_gold(prev, curr)
         + _activity_pets(pet_keys)

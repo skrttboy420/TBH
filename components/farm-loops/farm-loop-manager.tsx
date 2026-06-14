@@ -230,6 +230,9 @@ function FarmLoopCard({
                   รอบ
                   {currentDone ? " · ครบแล้ว ไปด่านถัดไปได้เลย" : ""}
                 </p>
+                <p className="mt-1 text-xs text-muted-foreground/80">
+                  นับรอบให้อัตโนมัติจากประวัติการเล่น — ปุ่ม +/− ไว้ปรับเองได้
+                </p>
               </div>
               <div className="flex flex-wrap items-center gap-2">
                 <Button
