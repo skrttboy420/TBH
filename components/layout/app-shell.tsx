@@ -2,13 +2,55 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Swords } from "lucide-react";
-import { NAV_ITEMS } from "@/lib/nav";
+import { Swords, MoreHorizontal } from "lucide-react";
+import { NAV_ITEMS, type NavItem } from "@/lib/nav";
 import { cn } from "@/lib/utils";
 import { UserMenu } from "@/components/layout/user-menu";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 function isActive(pathname: string, href: string) {
   return pathname === href || pathname.startsWith(href + "/");
+}
+
+/** Bottom-nav overflow: the nav items that don't fit get a "More" popup so
+ * every page (heroes, agents, settings…) stays reachable on mobile. */
+function MobileMoreMenu({ items, pathname }: { items: NavItem[]; pathname: string }) {
+  const anyActive = items.some((i) => isActive(pathname, i.href));
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <button
+          type="button"
+          className={cn(
+            "flex flex-1 flex-col items-center gap-1 py-2 text-[10px] font-medium outline-none transition-colors",
+            anyActive ? "text-primary" : "text-muted-foreground",
+          )}
+        >
+          <MoreHorizontal className="h-5 w-5" />
+          เพิ่มเติม
+        </button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent side="top" align="end" className="mb-2 min-w-[12rem]">
+        {items.map((item) => {
+          const Icon = item.icon;
+          const active = isActive(pathname, item.href);
+          return (
+            <DropdownMenuItem key={item.href} asChild>
+              <Link href={item.href} className={cn("cursor-pointer", active && "text-primary")}>
+                <Icon className="h-4 w-4" />
+                {item.label}
+              </Link>
+            </DropdownMenuItem>
+          );
+        })}
+      </DropdownMenuContent>
+    </DropdownMenu>
+  );
 }
 
 function Logo() {
@@ -81,9 +123,10 @@ export function AppShell({
         <main className="flex-1 p-4 pb-24 lg:p-6 lg:pb-6">{children}</main>
       </div>
 
-      {/* Mobile bottom nav */}
+      {/* Mobile bottom nav — first 4 items + a "More" menu for the rest, so no
+          page (heroes/agents/settings) becomes unreachable on small screens. */}
       <nav className="fixed inset-x-0 bottom-0 z-40 flex items-stretch border-t border-border bg-card/95 backdrop-blur lg:hidden">
-        {NAV_ITEMS.slice(0, 5).map((item) => {
+        {NAV_ITEMS.slice(0, 4).map((item) => {
           const Icon = item.icon;
           const active = isActive(pathname, item.href);
           return (
@@ -100,6 +143,7 @@ export function AppShell({
             </Link>
           );
         })}
+        <MobileMoreMenu items={NAV_ITEMS.slice(4)} pathname={pathname} />
       </nav>
     </div>
   );
