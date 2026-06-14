@@ -115,17 +115,20 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  // Auto-advance farm loops from real play. Each farm re-clear the agent reports
-  // (data.farm + data.stageKey) bumps every matching step's completed_rounds, so
-  // rounds are pulled from actual history instead of the user tapping +1 by hand.
-  // Manual +/- still work as corrections.
+  // Auto-advance farm loops from real play. Each farm-clear event the agent
+  // reports (data.farm + data.stageKey) bumps every matching step's
+  // completed_rounds by data.count (one event can cover several clears that
+  // happened between two infrequent save writes), so rounds are pulled from
+  // actual history instead of the user tapping +1 by hand. Manual +/- still
+  // work as corrections.
   const farmClears = new Map<number, number>();
   for (const a of activity ?? []) {
     const d = a.data;
     if (!d || d.farm !== true) continue;
     const sk = d.stageKey;
     if (typeof sk !== "number") continue;
-    farmClears.set(sk, (farmClears.get(sk) ?? 0) + 1);
+    const cnt = typeof d.count === "number" && d.count > 0 ? d.count : 1;
+    farmClears.set(sk, (farmClears.get(sk) ?? 0) + cnt);
   }
   if (farmClears.size > 0) {
     const { data: steps } = await admin

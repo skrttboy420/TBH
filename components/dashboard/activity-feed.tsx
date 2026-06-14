@@ -55,6 +55,18 @@ function farmGroupKey(e: ActivityEventRow): string | null {
   return `${e.type}:${typeof meta.stageKey === "number" ? meta.stageKey : "?"}`;
 }
 
+/** Clears-this-event + approx seconds/round the agent attached. One event can
+ * stand for several clears bundled between two infrequent save writes. */
+function farmMeta(e: ActivityEventRow): { count: number; sec: number | null } {
+  const d = e.data;
+  if (!d || typeof d !== "object" || Array.isArray(d)) return { count: 1, sec: null };
+  const m = d as { count?: unknown; secondsPerRound?: unknown };
+  const count = typeof m.count === "number" && m.count > 0 ? m.count : 1;
+  const sec =
+    typeof m.secondsPerRound === "number" && m.secondsPerRound > 0 ? m.secondsPerRound : null;
+  return { count, sec };
+}
+
 export function ActivityFeed({ events }: { events: ActivityEventRow[] }) {
   if (events.length === 0) {
     return (
@@ -65,22 +77,41 @@ export function ActivityFeed({ events }: { events: ActivityEventRow[] }) {
   }
 
   // Events arrive newest-first; collapse adjacent identical farm clears so a long
-  // farming session reads "เคลียร์ 3-5 ×12" instead of flooding the feed.
-  const groups: { event: ActivityEventRow; count: number }[] = [];
+  // farming session reads "เคลียร์ 3-5 ×12" instead of flooding the feed. Each
+  // event's data.count sums into the total, and seconds/round is a clear-weighted
+  // average across the merged events (secWeighted = Σ sec·count over events that
+  // carried a time).
+  const groups: {
+    event: ActivityEventRow;
+    total: number;
+    secWeighted: number;
+    secCount: number;
+  }[] = [];
   for (const e of events) {
     const k = farmGroupKey(e);
+    const { count, sec } = farmMeta(e);
     const last = groups[groups.length - 1];
     if (k && last && farmGroupKey(last.event) === k) {
-      last.count += 1;
+      last.total += count;
+      if (sec !== null) {
+        last.secWeighted += sec * count;
+        last.secCount += count;
+      }
     } else {
-      groups.push({ event: e, count: 1 });
+      groups.push({
+        event: e,
+        total: k ? count : 1,
+        secWeighted: k && sec !== null ? sec * count : 0,
+        secCount: k && sec !== null ? count : 0,
+      });
     }
   }
 
   return (
     <ol className="space-y-1">
-      {groups.map(({ event: e, count }) => {
+      {groups.map(({ event: e, total, secWeighted, secCount }) => {
         const Icon = ICONS[e.type] ?? Info;
+        const avgSec = secCount > 0 ? Math.round(secWeighted / secCount) : null;
         return (
           <li key={e.id} className="flex items-start gap-3 rounded-lg px-1 py-2">
             <span
@@ -94,9 +125,14 @@ export function ActivityFeed({ events }: { events: ActivityEventRow[] }) {
             <div className="min-w-0 flex-1">
               <p className="text-sm font-medium leading-tight">
                 {e.title}
-                {count > 1 ? (
+                {total > 1 ? (
                   <span className="ml-1.5 rounded bg-muted px-1.5 py-0.5 text-xs font-semibold tabular-nums text-muted-foreground">
-                    ×{count}
+                    ×{total}
+                  </span>
+                ) : null}
+                {avgSec ? (
+                  <span className="ml-1.5 text-xs font-normal tabular-nums text-muted-foreground">
+                    ~{avgSec}วิ{total > 1 ? "/รอบ" : ""}
                   </span>
                 ) : null}
               </p>

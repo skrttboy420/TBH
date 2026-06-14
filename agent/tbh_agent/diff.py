@@ -161,42 +161,59 @@ def _activity_stage(prev: dict, curr: dict) -> list[dict]:
     ]
 
 
-def _activity_farm_clear(prev: dict, curr: dict) -> list[dict]:
-    """Detect a farm *re-clear* of the same stage via a wave reset.
+def _activity_clears(prev: dict, curr: dict) -> list[dict]:
+    """Count stage clears from the lifetime ``stageClears`` counter (aggregate
+    Type 15) — every clear, even farm re-clears that ``maxCompletedStage`` and
+    the (rarely-written) wave never reveal.
 
-    While farming, the same stage repeats: ``currentStageWave`` climbs (1→~13)
-    then drops back near 1 the moment the stage is cleared and the next round
-    starts. ``maxCompletedStage`` does NOT move during farming (it only tracks
-    the highest stage ever reached), so ``_activity_stage`` stays silent — the
-    wave reset is the only clear signal the save exposes.
+    Why a cumulative counter instead of a wave reset: the save file is persisted
+    only every ~30–80s, NOT per wave, so watching ``currentStageWave`` drop
+    misses most rounds (live proof: wave read 0→9 across two saves while the
+    stage was actually cleared twice). ``stageClears`` is lossless — the delta
+    between two saves is the exact number of clears in between, however many
+    saves were skipped.
 
-    Guards:
-      • same stage only (currentStageKey unchanged) — a stage *change* is
-        progression, handled by ``_activity_stage``;
-      • maxCompletedStage unchanged — avoids double-counting the one diff where a
-        brand-new highest stage is cleared (``_activity_stage`` owns that).
-
-    Best-effort: one event per detected reset. The save has no per-stage clear
-    counter, so several clears between two polls collapse into a single event.
+    Emits a single event carrying ``count`` (how many clears) and an approximate
+    ``secondsPerRound`` (playTime delta ÷ clears; runtime per-run times aren't in
+    the save). ``maxCompletedStage`` bumps are owned by ``_activity_stage`` so we
+    drop one clear from the count when a new highest stage was reached this diff,
+    to avoid showing the milestone twice.
     """
+    prev_c = int(prev.get("stageClears", 0) or 0)
+    curr_c = int(curr.get("stageClears", 0) or 0)
+    clears = curr_c - prev_c
+    # prev_c <= 0 ⇒ first diff after upgrade (old state.json lacks stageClears);
+    # treat as baseline rather than reporting the whole lifetime total.
+    if clears <= 0 or prev_c <= 0:
+        return []
+
+    # The new-highest-stage clear is already announced by _activity_stage.
+    if int(curr.get("maxCompletedStage", 0) or 0) > int(prev.get("maxCompletedStage", 0) or 0):
+        clears -= 1
+    if clears <= 0:
+        return []
+
     key = int(curr.get("currentStageKey", 0) or 0)
-    if key <= 0 or int(prev.get("currentStageKey", 0) or 0) != key:
-        return []
-    if int(curr.get("maxCompletedStage", 0) or 0) != int(prev.get("maxCompletedStage", 0) or 0):
-        return []
-    prev_wave = int(prev.get("currentStageWave", 0) or 0)
-    curr_wave = int(curr.get("currentStageWave", 0) or 0)
-    if prev_wave < 2 or curr_wave >= prev_wave:
+    if key <= 0:
         return []
     d = decode_stage(key)
     is_boss = bool(d and d["isBoss"])
     label = stage_full_label_th(key)
+
+    # Plain title; the web feed composes "×N" and the approx seconds from
+    # `data` (so it can also merge clears across several polls and average).
+    dt = int(curr.get("playTime", 0) or 0) - int(prev.get("playTime", 0) or 0)
+    sec = round(dt / clears) if dt > 0 else None
+
+    data: dict[str, Any] = {"stageKey": key, "farm": True, "count": clears}
+    if sec:
+        data["secondsPerRound"] = sec
     return [
         {
             "type": "boss_cleared" if is_boss else "stage_cleared",
             "title": f"เคลียร์บอส {label}" if is_boss else f"เคลียร์ {label}",
             "description": None,
-            "data": {"stageKey": key, "farm": True, "wave": prev_wave},
+            "data": data,
         }
     ]
 
@@ -268,7 +285,7 @@ def diff_saves(prev: dict | None, curr: dict) -> tuple[list[dict], list[dict]]:
     )
     activity = (
         _activity_stage(prev, curr)
-        + _activity_farm_clear(prev, curr)
+        + _activity_clears(prev, curr)
         + _activity_levelups(prev, curr)
         + _activity_gold(prev, curr)
         + _activity_pets(pet_keys)

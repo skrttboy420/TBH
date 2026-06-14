@@ -15,6 +15,12 @@ from typing import Any
 GOLD_CURRENCY_KEY = 100001
 TICKS_AT_UNIX_EPOCH = 621355968000000000  # .NET ticks at 1970-01-01
 
+# aggregateSaveDatas Type whose SubKey-0 value is the lifetime "stages cleared"
+# counter. Verified live: farming stage 3-5 for ~81s bumped it by exactly +2
+# (two re-clears) while the wave merely climbed 0→9 — i.e. it counts *every*
+# clear, losslessly, regardless of how rarely the save file is rewritten.
+STAGE_CLEARS_AGG_TYPE = 15
+
 
 def _get(d: dict[str, Any], *names: str, default: Any = None) -> Any:
     """First present key among `names` (tolerates PascalCase/camelCase drift)."""
@@ -85,6 +91,21 @@ def _map_settings(s: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def _stage_clears(player: dict[str, Any]) -> int:
+    """Lifetime stages-cleared counter (aggregate Type 15, SubKey 0)."""
+    agg = _get(player, "aggregateSaveDatas", "AggregateSaveDatas", default=[]) or []
+    for e in agg:
+        if int(_get(e, "Type", default=-1)) != STAGE_CLEARS_AGG_TYPE:
+            continue
+        if int(_get(e, "SubKey", default=0)) != 0:
+            continue
+        try:
+            return int(_get(e, "Value", default=0))
+        except (TypeError, ValueError):
+            return 0
+    return 0
+
+
 def _save_hash(payload: dict[str, Any]) -> str:
     """Stable hash over meaningful content (excludes volatile timestamps)."""
     canonical = {
@@ -92,6 +113,7 @@ def _save_hash(payload: dict[str, Any]) -> str:
         "currentStageKey": payload["currentStageKey"],
         "maxCompletedStage": payload["maxCompletedStage"],
         "currentStageWave": payload["currentStageWave"],
+        "stageClears": payload["stageClears"],
         "currencies": payload["currencies"],
         "inventory": payload["inventory"],
         "stash": payload["stash"],
@@ -173,6 +195,7 @@ def parse_save(player: dict[str, Any]) -> dict[str, Any]:
         "maxCompletedStage": int(_get(common, "maxCompletedStage", default=0)),
         "currentStageKey": int(_get(common, "currentStageKey", default=0)),
         "currentStageWave": int(_get(common, "currentStageWave", default=0)),
+        "stageClears": _stage_clears(player),
         "arrangedHeroKeys": [int(x) for x in _get(common, "arrangedHeroKey", default=[]) or []],
         "arrangedPetKey": (
             int(_get(common, "ArrangedPetKey")) if _get(common, "ArrangedPetKey") is not None else None

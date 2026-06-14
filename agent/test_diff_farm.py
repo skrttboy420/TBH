@@ -1,9 +1,10 @@
-"""ทดสอบการตรวจจับ "เคลียร์ด่านซ้ำ" (farm re-clear) ใน diff.py
+"""ทดสอบการนับ "เคลียร์ด่าน" จากตัวนับสะสม stageClears (aggregate Type 15) ใน diff.py
 
-ตัวเกมไม่มีตัวนับจำนวนรอบที่เคลียร์ในเซฟ และ maxCompletedStage จะขยับเฉพาะตอน
-ผ่านด่านสูงสุดใหม่เท่านั้น สัญญาณเดียวที่บอกว่า "เคลียร์ด่านเดิมอีกรอบ" คือค่า
-currentStageWave ที่ไต่ขึ้นแล้วรีเซ็ตกลับ ไฟล์นี้ยืนยันว่า _activity_farm_clear
-จับสัญญาณนั้นได้ถูกต้อง และไม่ตีกับ _activity_stage (กันนับซ้ำ)
+เกมเขียนไฟล์เซฟไม่บ่อย (ทุก ~30–80 วิ ไม่ใช่ทุกเวฟ) การเฝ้าดู currentStageWave
+รีเซ็ตจึงพลาดรอบส่วนใหญ่ ตัวนับสะสม stageClears นับครบทุกรอบแบบไม่หาย — ผลต่าง
+ระหว่างสองเซฟ = จำนวนรอบที่เคลียร์จริงในช่วงนั้น (ยืนยันสด: ฟาร์ม 3-5 ~81 วิ ตัวนับ
++2 พอดี ขณะที่ wave อ่านได้แค่ 0→9) ไฟล์นี้ยืนยันว่า _activity_clears นับถูก,
+ใส่ count + วินาที/รอบโดยประมาณ, และไม่ตีกับ _activity_stage (กันนับซ้ำ)
 
 รัน (ไม่ต้องใช้ pytest):
     cd agent && python test_diff_farm.py
@@ -13,18 +14,20 @@ currentStageWave ที่ไต่ขึ้นแล้วรีเซ็ตก
 
 from __future__ import annotations
 
-from tbh_agent.diff import _activity_farm_clear, diff_saves
+from tbh_agent.diff import _activity_clears, diff_saves
 
 NORMAL = 1305  # ปกติ · องก์ 3 · 3-5  (stage 5 = ไม่ใช่บอส)
 BOSS = 1310    # ปกติ · องก์ 3 · บอส   (stage 10 = บอสองก์)
 
 
-def save(stage_key=NORMAL, max_completed=NORMAL, wave=1, gold=0):
+def save(stage_key=NORMAL, max_completed=NORMAL, clears=100, play_time=0, gold=0):
     """เซฟจำลองที่มีคีย์ครบพอให้ diff_saves ทำงานได้โดยไม่ KeyError."""
     return {
         "currentStageKey": stage_key,
         "maxCompletedStage": max_completed,
-        "currentStageWave": wave,
+        "currentStageWave": 1,
+        "stageClears": clears,
+        "playTime": play_time,
         "gold": gold,
         "inventory": [],
         "stash": [],
@@ -36,74 +39,111 @@ def save(stage_key=NORMAL, max_completed=NORMAL, wave=1, gold=0):
     }
 
 
-# ── _activity_farm_clear ────────────────────────────────────────────────────
-def test_wave_reset_same_stage_fires():
-    """ไต่ถึง wave 13 แล้วรีเซ็ตเป็น 1 ด่านเดิม → 1 อีเวนต์ stage_cleared (farm)."""
-    out = _activity_farm_clear(save(wave=13), save(wave=1))
+# ── _activity_clears ─────────────────────────────────────────────────────────
+def test_counter_delta_fires_with_count():
+    """ตัวนับ +3 ด่านเดิม → 1 อีเวนต์ stage_cleared (farm) count=3."""
+    out = _activity_clears(save(clears=100), save(clears=103))
     assert len(out) == 1
     e = out[0]
     assert e["type"] == "stage_cleared"
-    assert e["data"] == {"stageKey": NORMAL, "farm": True, "wave": 13}
+    assert e["data"]["stageKey"] == NORMAL
+    assert e["data"]["farm"] is True
+    assert e["data"]["count"] == 3
     assert e["title"].startswith("เคลียร์ ")
 
 
-def test_boss_stage_reset_is_boss_cleared():
-    out = _activity_farm_clear(save(BOSS, BOSS, wave=8), save(BOSS, BOSS, wave=1))
-    assert len(out) == 1
+def test_seconds_per_round_from_playtime():
+    """วินาที/รอบ = ผลต่าง playTime ÷ จำนวนรอบ = 120/3 = 40."""
+    out = _activity_clears(save(clears=100, play_time=1000), save(clears=103, play_time=1120))
+    assert out[0]["data"]["secondsPerRound"] == 40
+
+
+def test_no_playtime_omits_seconds():
+    out = _activity_clears(save(clears=100, play_time=0), save(clears=101, play_time=0))
+    assert "secondsPerRound" not in out[0]["data"]
+
+
+def test_boss_stage_is_boss_cleared():
+    out = _activity_clears(save(BOSS, BOSS, clears=50), save(BOSS, BOSS, clears=52))
     assert out[0]["type"] == "boss_cleared"
     assert out[0]["title"].startswith("เคลียร์บอส ")
+    assert out[0]["data"]["count"] == 2
 
 
-def test_wave_climbing_does_not_fire():
-    assert _activity_farm_clear(save(wave=3), save(wave=7)) == []
+def test_no_change_does_not_fire():
+    assert _activity_clears(save(clears=100), save(clears=100)) == []
 
 
-def test_stage_change_does_not_fire():
-    """เปลี่ยนด่าน (3-5 → 3-6) คือการคืบหน้า ไม่ใช่ฟาร์มซ้ำ."""
-    assert _activity_farm_clear(save(NORMAL, wave=13), save(NORMAL + 1, wave=1)) == []
+def test_counter_decrease_does_not_fire():
+    assert _activity_clears(save(clears=100), save(clears=99)) == []
 
 
-def test_new_max_does_not_double_count():
-    """ด่านเดิม wave รีเซ็ต แต่ maxCompletedStage เพิ่ม → ปล่อยให้ _activity_stage จัดการ."""
-    prev = save(NORMAL, max_completed=NORMAL - 1, wave=13)
-    curr = save(NORMAL, max_completed=NORMAL, wave=1)
-    assert _activity_farm_clear(prev, curr) == []
+def test_baseline_after_upgrade_does_not_flood():
+    """state.json เก่าไม่มี stageClears → prev=0 ถือเป็นค่าตั้งต้น ไม่เทยอดสะสมทั้งก้อน."""
+    assert _activity_clears(save(clears=0), save(clears=8000)) == []
 
 
-def test_low_prev_wave_is_noise():
-    assert _activity_farm_clear(save(wave=1), save(wave=0)) == []
+def test_new_max_subtracts_milestone_clear():
+    """เคลียร์ 2 รอบ โดย 1 รอบเป็นด่านสูงสุดใหม่ → _activity_stage เอา 1, เหลือ farm count=1."""
+    prev = save(NORMAL, max_completed=NORMAL - 1, clears=100)
+    curr = save(NORMAL, max_completed=NORMAL, clears=102)
+    out = _activity_clears(prev, curr)
+    assert len(out) == 1
+    assert out[0]["data"]["count"] == 1
+    assert out[0]["data"]["farm"] is True
+
+
+def test_new_max_single_clear_yields_no_farm():
+    """เคลียร์รอบเดียวซึ่งเป็นด่านสูงสุดใหม่ → _activity_stage จัดการล้วน, ไม่มี farm."""
+    prev = save(NORMAL, max_completed=NORMAL - 1, clears=100)
+    curr = save(NORMAL, max_completed=NORMAL, clears=101)
+    assert _activity_clears(prev, curr) == []
 
 
 def test_no_stage_does_not_fire():
-    assert _activity_farm_clear(save(0, 0, wave=5), save(0, 0, wave=1)) == []
+    assert _activity_clears(save(0, 0, clears=100), save(0, 0, clears=105)) == []
 
 
 # ── diff_saves integration (กันนับซ้ำกับ _activity_stage) ────────────────────
-def test_diff_farm_clear_appears_once():
-    _loot, activity = diff_saves(save(wave=13), save(wave=1))
+def test_diff_farm_clears_appear_once_with_count():
+    _loot, activity = diff_saves(save(clears=100), save(clears=105))
     farm = [a for a in activity if a.get("data", {}).get("farm")]
     assert len(farm) == 1
     assert farm[0]["type"] == "stage_cleared"
+    assert farm[0]["data"]["count"] == 5
 
 
 def test_diff_progression_has_no_farm_flag():
     """ผ่านด่านสูงสุดใหม่แล้วขยับไปด่านถัดไป → มี stage_cleared แต่ไม่มี farm flag."""
-    prev = save(NORMAL, max_completed=NORMAL - 1, wave=13)
-    curr = save(NORMAL + 1, max_completed=NORMAL, wave=1)
+    prev = save(NORMAL, max_completed=NORMAL - 1, clears=100)
+    curr = save(NORMAL + 1, max_completed=NORMAL, clears=101)
     _loot, activity = diff_saves(prev, curr)
     stage = [a for a in activity if a["type"] in ("stage_cleared", "boss_cleared")]
     assert len(stage) == 1
     assert not stage[0].get("data", {}).get("farm")
 
 
-def test_diff_simultaneous_clear_counts_once():
-    """เคลียร์ด่านที่กลายเป็น max ใหม่พอดี (คีย์ยังไม่ขยับ) ต้องนับครั้งเดียว."""
-    prev = save(NORMAL, max_completed=NORMAL - 1, wave=13)
-    curr = save(NORMAL, max_completed=NORMAL, wave=1)
+def test_diff_single_new_max_counts_once():
+    """เคลียร์ด่านที่กลายเป็น max ใหม่พอดี (รอบเดียว) ต้องนับครั้งเดียว ไม่ใช่ farm."""
+    prev = save(NORMAL, max_completed=NORMAL - 1, clears=100)
+    curr = save(NORMAL, max_completed=NORMAL, clears=101)
     _loot, activity = diff_saves(prev, curr)
     stage = [a for a in activity if a["type"] in ("stage_cleared", "boss_cleared")]
     assert len(stage) == 1
     assert not stage[0].get("data", {}).get("farm")
+
+
+def test_diff_new_max_plus_reclears_split():
+    """maxสูงขึ้น + เคลียร์ซ้ำหลายรอบ → 1 progression(ไม่ farm) + 1 farm(count=รอบที่เหลือ)."""
+    prev = save(NORMAL, max_completed=NORMAL - 1, clears=100)
+    curr = save(NORMAL, max_completed=NORMAL, clears=104)
+    _loot, activity = diff_saves(prev, curr)
+    stage = [a for a in activity if a["type"] in ("stage_cleared", "boss_cleared")]
+    farm = [a for a in stage if a.get("data", {}).get("farm")]
+    nonfarm = [a for a in stage if not a.get("data", {}).get("farm")]
+    assert len(nonfarm) == 1               # _activity_stage milestone
+    assert len(farm) == 1                   # _activity_clears remainder
+    assert farm[0]["data"]["count"] == 3    # 4 clears − 1 milestone
 
 
 def test_first_run_is_empty():
