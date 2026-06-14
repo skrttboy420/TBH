@@ -178,6 +178,11 @@ def _activity_clears(prev: dict, curr: dict) -> list[dict]:
     the save). ``maxCompletedStage`` bumps are owned by ``_activity_stage`` so we
     drop one clear from the count when a new highest stage was reached this diff,
     to avoid showing the milestone twice.
+
+    The ``farm`` flag (which the web uses to bump a farm-loop's round counter) is
+    only set when ``currentStageKey`` is unchanged across the diff: the global
+    counter can't attribute clears to a stage, so a moving stage means the delta
+    spans several stages and must not all land on one loop step.
     """
     prev_c = int(prev.get("stageClears", 0) or 0)
     curr_c = int(curr.get("stageClears", 0) or 0)
@@ -205,7 +210,18 @@ def _activity_clears(prev: dict, curr: dict) -> list[dict]:
     dt = int(curr.get("playTime", 0) or 0) - int(prev.get("playTime", 0) or 0)
     sec = round(dt / clears) if dt > 0 else None
 
-    data: dict[str, Any] = {"stageKey": key, "farm": True, "count": clears}
+    # Only drive farm-loop auto-counting (data.farm) when the player sat on the
+    # SAME stage across this diff. stageClears is one global lifetime counter — it
+    # never says *which* stage was cleared — so if currentStageKey moved between
+    # two saves the delta is spread over several stages, and pinning all of it on
+    # whatever stage we happen to land on is wrong (it made a freshly-entered
+    # "1-4" jump to ×3). The clear still shows in the feed; it just won't bump a
+    # loop's round count unless we're confident it's a genuine re-farm.
+    stable = key == int(prev.get("currentStageKey", 0) or 0)
+
+    data: dict[str, Any] = {"stageKey": key, "count": clears}
+    if stable:
+        data["farm"] = True
     if sec:
         data["secondsPerRound"] = sec
     return [

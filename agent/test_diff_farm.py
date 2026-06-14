@@ -104,6 +104,29 @@ def test_no_stage_does_not_fire():
     assert _activity_clears(save(0, 0, clears=100), save(0, 0, clears=105)) == []
 
 
+def test_same_stage_keeps_farm_flag():
+    """ฟาร์มอยู่กับที่ (currentStageKey เดิม) → ติดธง farm ตามเดิม นับเข้าลูปได้."""
+    out = _activity_clears(
+        save(stage_key=1104, max_completed=2000, clears=100),
+        save(stage_key=1104, max_completed=2000, clears=102),
+    )
+    assert out[0]["data"]["count"] == 2
+    assert out[0]["data"]["farm"] is True
+
+
+def test_stage_changed_omits_farm_flag():
+    """ตัวนับสะสมเพิ่ม แต่ "ด่านปัจจุบัน" เปลี่ยนระหว่างสองเซฟ → รอบนั้นกระจายหลายด่าน
+    จะเหมาเข้า currentStageKey ทั้งก้อนไม่ได้ (เคยทำให้ 1-4 ที่เพิ่งเข้าเด้งเป็น ×3) →
+    ยังขึ้น feed พร้อม count แต่ห้ามติดธง farm (กันไปบวกรอบผิดด่านให้ลูป)."""
+    prev = save(stage_key=1101, max_completed=2000, clears=100)  # อยู่ 1-1
+    curr = save(stage_key=1104, max_completed=2000, clears=103)  # ย้ายมา 1-4, ตัวนับ +3
+    out = _activity_clears(prev, curr)
+    assert len(out) == 1
+    assert out[0]["data"]["stageKey"] == 1104
+    assert out[0]["data"]["count"] == 3
+    assert "farm" not in out[0]["data"]
+
+
 # ── diff_saves integration (กันนับซ้ำกับ _activity_stage) ────────────────────
 def test_diff_farm_clears_appear_once_with_count():
     _loot, activity = diff_saves(save(clears=100), save(clears=105))
@@ -144,6 +167,17 @@ def test_diff_new_max_plus_reclears_split():
     assert len(nonfarm) == 1               # _activity_stage milestone
     assert len(farm) == 1                   # _activity_clears remainder
     assert farm[0]["data"]["count"] == 3    # 4 clears − 1 milestone
+
+
+def test_diff_stage_changed_has_no_farm_flag():
+    """ย้ายด่านระหว่างเซฟ → ยังมี stage_cleared ใน feed แต่ไม่มี farm flag
+    → ลูปฟาร์มจะไม่ถูกบวกรอบผิดด่าน (รีเกรสชันของบั๊ก 1-4 เด้งเป็น ×3)."""
+    prev = save(stage_key=1101, max_completed=2000, clears=100)
+    curr = save(stage_key=1104, max_completed=2000, clears=103)
+    _loot, activity = diff_saves(prev, curr)
+    stage = [a for a in activity if a["type"] in ("stage_cleared", "boss_cleared")]
+    assert len(stage) == 1
+    assert not stage[0].get("data", {}).get("farm")
 
 
 def test_first_run_is_empty():
