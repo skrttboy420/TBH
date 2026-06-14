@@ -1,0 +1,3747 @@
+{
+"100001": {
+"th": null,
+"en": null,
+"type": "Item",
+"slot": "material",
+"icon": "100001.png"
+},
+"110001": {
+"th": "ทับทิมชั้นต่ำ",
+"en": "Minor Ruby",
+"type": "Item",
+"slot": "material",
+"icon": "110001.png"
+},
+"110002": {
+"th": "แซปไฟร์ชั้นต่ำ",
+"en": "Minor Sapphire",
+"type": "Item",
+"slot": "material",
+"icon": "110002.png"
+},
+"110003": {
+"th": "โทแพซชั้นต่ำ",
+"en": "Minor Topaz",
+"type": "Item",
+"slot": "material",
+"icon": "110003.png"
+},
+"110004": {
+"th": "มรกตชั้นต่ำ",
+"en": "Minor Emerald",
+"type": "Item",
+"slot": "material",
+"icon": "110004.png"
+},
+"110005": {
+"th": "อเมทิสต์ชั้นต่ำ",
+"en": "Minor Amethyst",
+"type": "Item",
+"slot": "material",
+"icon": "110005.png"
+},
+"111001": {
+"th": "เศษออบซิเดียน",
+"en": "Obsidian Shard",
+"type": "Item",
+"slot": "material",
+"icon": "111001.png"
+},
+"111002": {
+"th": "ชิ้นปะการัง",
+"en": "Coral Piece",
+"type": "Item",
+"slot": "material",
+"icon": "111002.png"
+},
+"111003": {
+"th": "หินหยก",
+"en": "Jade Stone",
+"type": "Item",
+"slot": "material",
+"icon": "111003.png"
+},
+"111004": {
+"th": "อัญมณีอำพัน",
+"en": "Amber Gem",
+"type": "Item",
+"slot": "material",
+"icon": "111004.png"
+},
+"111005": {
+"th": null,
+"en": null,
+"type": "Item",
+"slot": "material",
+"icon": "111005.png"
+},
+"112001": {
+"th": "ทับทิม",
+"en": "Ruby",
+"type": "Item",
+"slot": "material",
+"icon": "112001.png"
+},
+"112002": {
+"th": "แซปไฟร์",
+"en": "Sapphire",
+"type": "Item",
+"slot": "material",
+"icon": "112002.png"
+},
+"112003": {
+"th": "โทแพซ",
+"en": "Topaz",
+"type": "Item",
+"slot": "material",
+"icon": "112003.png"
+},
+"112004": {
+"th": "มรกต",
+"en": "Emerald",
+"type": "Item",
+"slot": "material",
+"icon": "112004.png"
+},
+"112005": {
+"th": "อเมทิสต์",
+"en": "Amethyst",
+"type": "Item",
+"slot": "material",
+"icon": "112005.png"
+},
+"113001": {
+"th": "ควอตซ์คริสตัล",
+"en": "Crystal Quartz",
+"type": "Item",
+"slot": "material",
+"icon": "113001.png"
+},
+"113002": {
+"th": "ไข่มุก",
+"en": "Pearl",
+"type": "Item",
+"slot": "material",
+"icon": "113002.png"
+},
+"113003": {
+"th": "เทอร์ควอยซ์",
+"en": "Turquoise",
+"type": "Item",
+"slot": "material",
+"icon": "113003.png"
+},
+"113004": {
+"th": "โกเมน",
+"en": "Garnet",
+"type": "Item",
+"slot": "material",
+"icon": "113004.png"
+},
+"113005": {
+"th": null,
+"en": null,
+"type": "Item",
+"slot": "material",
+"icon": "113005.png"
+},
+"114001": {
+"th": "เพชร",
+"en": "Diamond",
+"type": "Item",
+"slot": "material",
+"icon": "114001.png"
+},
+"114002": {
+"th": "โอปอล",
+"en": "Opal",
+"type": "Item",
+"slot": "material",
+"icon": "114002.png"
+},
+"114003": {
+"th": "ลาพิสลาซูลี",
+"en": "Lapis Lazuli",
+"type": "Item",
+"slot": "material",
+"icon": "114003.png"
+},
+"114004": {
+"th": "ไข่มุกดำ",
+"en": "Black Pearl",
+"type": "Item",
+"slot": "material",
+"icon": "114004.png"
+},
+"114005": {
+"th": null,
+"en": null,
+"type": "Item",
+"slot": "material",
+"icon": "114005.png"
+},
+"115001": {
+"th": "คริสตัลอาร์เคน",
+"en": "Arcane Crystal",
+"type": "Item",
+"slot": "material",
+"icon": "115001.png"
+},
+"115002": {
+"th": "โทแพซลึกลับ",
+"en": "Mystic Topaz",
+"type": "Item",
+"slot": "material",
+"icon": "115002.png"
+},
+"115003": {
+"th": "ทับทิมมนตรา",
+"en": "Enchanted Ruby",
+"type": "Item",
+"slot": "material",
+"icon": "115003.png"
+},
+"115004": {
+"th": "แซปไฟร์แสงดาว",
+"en": "Starlight Sapphire",
+"type": "Item",
+"slot": "material",
+"icon": "115004.png"
+},
+"115005": {
+"th": null,
+"en": null,
+"type": "Item",
+"slot": "material",
+"icon": "115005.png"
+},
+"116001": {
+"th": "โอปอลสุญญากาศ",
+"en": "Void Opal",
+"type": "Item",
+"slot": "material",
+"icon": "116001.png"
+},
+"116002": {
+"th": "เพชรดวงดาว",
+"en": "Astral Diamond",
+"type": "Item",
+"slot": "material",
+"icon": "116002.png"
+},
+"116003": {
+"th": "มรกตปีศาจ",
+"en": "Phantom Emerald",
+"type": "Item",
+"slot": "material",
+"icon": "116003.png"
+},
+"116004": {
+"th": "อเมทิสต์สนธยา",
+"en": "Twilight Amethyst",
+"type": "Item",
+"slot": "material",
+"icon": "116004.png"
+},
+"116005": {
+"th": null,
+"en": null,
+"type": "Item",
+"slot": "material",
+"icon": "116005.png"
+},
+"117001": {
+"th": "ไข่มุกสวรรค์",
+"en": "Celestial Pearl",
+"type": "Item",
+"slot": "material",
+"icon": "117001.png"
+},
+"117002": {
+"th": "คริสตัลดราโกไนต์",
+"en": "Dragonite Crystal",
+"type": "Item",
+"slot": "material",
+"icon": "117002.png"
+},
+"117003": {
+"th": null,
+"en": null,
+"type": "Item",
+"slot": "material",
+"icon": "117003.png"
+},
+"117004": {
+"th": null,
+"en": null,
+"type": "Item",
+"slot": "material",
+"icon": "117004.png"
+},
+"117005": {
+"th": null,
+"en": null,
+"type": "Item",
+"slot": "material",
+"icon": "117005.png"
+},
+"118001": {
+"th": "คริสตัลสุญญากาศ",
+"en": "Void Crystal",
+"type": "Item",
+"slot": "material",
+"icon": "118001.png"
+},
+"118002": {
+"th": "ไข่มุกเหวลึก",
+"en": "Abyssal Pearl",
+"type": "Item",
+"slot": "material",
+"icon": "118002.png"
+},
+"118003": {
+"th": null,
+"en": null,
+"type": "Item",
+"slot": "material",
+"icon": "118003.png"
+},
+"118004": {
+"th": null,
+"en": null,
+"type": "Item",
+"slot": "material",
+"icon": "118004.png"
+},
+"118005": {
+"th": null,
+"en": null,
+"type": "Item",
+"slot": "material",
+"icon": "118005.png"
+},
+"119001": {
+"th": "อัญมณีอีเธอเรียล",
+"en": "Ethereal Gem",
+"type": "Item",
+"slot": "material",
+"icon": "119001.png"
+},
+"119002": {
+"th": "เพชรแห่งโกลาหล",
+"en": "Chaos Diamond",
+"type": "Item",
+"slot": "material",
+"icon": "119002.png"
+},
+"119003": {
+"th": null,
+"en": null,
+"type": "Item",
+"slot": "material",
+"icon": "119003.png"
+},
+"119004": {
+"th": null,
+"en": null,
+"type": "Item",
+"slot": "material",
+"icon": "119004.png"
+},
+"119005": {
+"th": null,
+"en": null,
+"type": "Item",
+"slot": "material",
+"icon": "119005.png"
+},
+"120001": {
+"th": "หนังก็อบลิน",
+"en": "Goblin Hide",
+"type": "Item",
+"slot": "material",
+"icon": "120001.png"
+},
+"120002": {
+"th": "กระดูกโครงกระดูก",
+"en": "Skeleton Bone",
+"type": "Item",
+"slot": "material",
+"icon": "120002.png"
+},
+"120003": {
+"th": "เจลลี่สไลม์",
+"en": "Slime Jelly",
+"type": "Item",
+"slot": "material",
+"icon": "120003.png"
+},
+"121001": {
+"th": "เขี้ยวหมาป่า",
+"en": "Wolf Fang",
+"type": "Item",
+"slot": "material",
+"icon": "121001.png"
+},
+"121002": {
+"th": "ใยแมงมุม",
+"en": "Spider Silk",
+"type": "Item",
+"slot": "material",
+"icon": "121002.png"
+},
+"121003": {
+"th": "สมุนไพรพิษ",
+"en": "Poisonous Herb",
+"type": "Item",
+"slot": "material",
+"icon": "121003.png"
+},
+"121004": {
+"th": "สมุนไพรรักษา",
+"en": "Healing Herb",
+"type": "Item",
+"slot": "material",
+"icon": "121004.png"
+},
+"122001": {
+"th": "เยื่อปีกค้างคาว",
+"en": "Bat Wing Membrane",
+"type": "Item",
+"slot": "material",
+"icon": "122001.png"
+},
+"122002": {
+"th": "เลือดอสูร",
+"en": "Ogre Blood",
+"type": "Item",
+"slot": "material",
+"icon": "122002.png"
+},
+"122003": {
+"th": "สปอร์เห็ด",
+"en": "Mushroom Spore",
+"type": "Item",
+"slot": "material",
+"icon": "122003.png"
+},
+"122004": {
+"th": "ยางไม้โบราณ",
+"en": "Ancient Tree Sap",
+"type": "Item",
+"slot": "material",
+"icon": "122004.png"
+},
+"122005": {
+"th": null,
+"en": null,
+"type": "Item",
+"slot": "material",
+"icon": "122005.png"
+},
+"122006": {
+"th": null,
+"en": null,
+"type": "Item",
+"slot": "material",
+"icon": "122006.png"
+},
+"123001": {
+"th": "กะโหลก",
+"en": "Skull",
+"type": "Item",
+"slot": "material",
+"icon": "123001.png"
+},
+"123002": {
+"th": "ขนฮาร์ปี",
+"en": "Harpy Feather",
+"type": "Item",
+"slot": "material",
+"icon": "123002.png"
+},
+"123003": {
+"th": "รากแมนเดรก",
+"en": "Mandrake Root",
+"type": "Item",
+"slot": "material",
+"icon": "123003.png"
+},
+"123004": {
+"th": "สกัดไนต์เชด",
+"en": "Nightshade Extract",
+"type": "Item",
+"slot": "material",
+"icon": "123004.png"
+},
+"124001": {
+"th": "เกล็ดบาซิลิสก์",
+"en": "Basilisk Scale",
+"type": "Item",
+"slot": "material",
+"icon": "124001.png"
+},
+"124002": {
+"th": "กรงเล็บไวเวิร์น",
+"en": "Wyvern Claw",
+"type": "Item",
+"slot": "material",
+"icon": "124002.png"
+},
+"124003": {
+"th": "ลูกเต๋า",
+"en": "Dice",
+"type": "Item",
+"slot": "material",
+"icon": "124003.png"
+},
+"124004": {
+"th": "เลือดปีศาจ",
+"en": "Demon Blood",
+"type": "Item",
+"slot": "material",
+"icon": "124004.png"
+},
+"125001": {
+"th": "เขามิโนทอร์",
+"en": "Minotaur Horn",
+"type": "Item",
+"slot": "material",
+"icon": "125001.png"
+},
+"125002": {
+"th": "ปากกริฟฟิน",
+"en": "Griffin Beak",
+"type": "Item",
+"slot": "material",
+"icon": "125002.png"
+},
+"125003": {
+"th": "เถ้าฟีนิกซ์",
+"en": "Phoenix Ash",
+"type": "Item",
+"slot": "material",
+"icon": "125003.png"
+},
+"125004": {
+"th": "ดีมังกร",
+"en": "Dragon Bile",
+"type": "Item",
+"slot": "material",
+"icon": "125004.png"
+},
+"126001": {
+"th": "แก่นวิญญาณ",
+"en": "Wraith Essence",
+"type": "Item",
+"slot": "material",
+"icon": "126001.png"
+},
+"126002": {
+"th": "หมึกคราเคน",
+"en": "Kraken Ink",
+"type": "Item",
+"slot": "material",
+"icon": "126002.png"
+},
+"126003": {
+"th": "ไขกระดูกไททัน",
+"en": "Titan Marrow",
+"type": "Item",
+"slot": "material",
+"icon": "126003.png"
+},
+"126004": {
+"th": "น้ำเลือดสุญญากาศ",
+"en": "Void Ichor",
+"type": "Item",
+"slot": "material",
+"icon": "126004.png"
+},
+"127001": {
+"th": "เมือกเหวลึก",
+"en": "Abyssal Mucus",
+"type": "Item",
+"slot": "material",
+"icon": "127001.png"
+},
+"127002": {
+"th": "สปอร์แห่งโกลาหล",
+"en": "Chaos Spore",
+"type": "Item",
+"slot": "material",
+"icon": "127002.png"
+},
+"128001": {
+"th": "ยางแห่งต้นกำเนิด",
+"en": "Primordial Sap",
+"type": "Item",
+"slot": "material",
+"icon": "128001.png"
+},
+"128002": {
+"th": "พิษร้ายโบราณ",
+"en": "Eldritch Venom",
+"type": "Item",
+"slot": "material",
+"icon": "128002.png"
+},
+"129001": {
+"th": "ลูกเต๋าแห่งโกลาหล",
+"en": "Chaso Dice",
+"type": "Item",
+"slot": "material",
+"icon": "129001.png"
+},
+"129002": {
+"th": "หนวดสุญญากาศ",
+"en": "Void Tendril",
+"type": "Item",
+"slot": "material",
+"icon": "129002.png"
+},
+"130001": {
+"th": "ม้วนคาถาจารึกธรรมดา",
+"en": "Scroll of Common Inscription",
+"type": "Item",
+"slot": "material",
+"icon": "130001.png"
+},
+"130002": {
+"th": null,
+"en": null,
+"type": "Item",
+"slot": "material",
+"icon": "130002.png"
+},
+"131001": {
+"th": "ม้วนคาถาจารึกขั้นสูง",
+"en": "Scroll of Uncommon Inscription",
+"type": "Item",
+"slot": "material",
+"icon": "131001.png"
+},
+"132001": {
+"th": "ม้วนคาถาจารึกหายาก",
+"en": "Scroll of Rare Inscription",
+"type": "Item",
+"slot": "material",
+"icon": "132001.png"
+},
+"133001": {
+"th": "ม้วนคาถาจารึกตำนาน",
+"en": "Scroll of Legendary Inscription",
+"type": "Item",
+"slot": "material",
+"icon": "133001.png"
+},
+"134001": {
+"th": "ม้วนคาถาจารึกอมตะ",
+"en": "Scroll of Immortal Inscription",
+"type": "Item",
+"slot": "material",
+"icon": "134001.png"
+},
+"135001": {
+"th": "ม้วนคาถาจารึกอาร์คานา",
+"en": "Scroll of Arcana Inscription",
+"type": "Item",
+"slot": "material",
+"icon": "135001.png"
+},
+"136001": {
+"th": "ม้วนคาถาจารึกเหนือโลก",
+"en": "Scroll of Beyond Inscription",
+"type": "Item",
+"slot": "material",
+"icon": "136001.png"
+},
+"137001": {
+"th": "ม้วนคาถาจารึกสวรรค์",
+"en": "Scroll of Celestial Inscription",
+"type": "Item",
+"slot": "material",
+"icon": "137001.png"
+},
+"138001": {
+"th": "ม้วนคาถาจารึกเทพ",
+"en": "Scroll of Divine Inscription",
+"type": "Item",
+"slot": "material",
+"icon": "138001.png"
+},
+"139001": {
+"th": "ม้วนคาถาจารึกจักรวาล",
+"en": "Scroll of Cosmic Inscription",
+"type": "Item",
+"slot": "material",
+"icon": "139001.png"
+},
+"140001": {
+"th": "ไม้",
+"en": "Wood",
+"type": "Item",
+"slot": "material",
+"icon": "140001.png"
+},
+"140002": {
+"th": "หิน",
+"en": "Stone",
+"type": "Item",
+"slot": "material",
+"icon": "140002.png"
+},
+"140003": {
+"th": "หนัง",
+"en": "Leather",
+"type": "Item",
+"slot": "material",
+"icon": "140003.png"
+},
+"140004": {
+"th": "ก้อนทองแดง",
+"en": "Copper Nugget",
+"type": "Item",
+"slot": "material",
+"icon": "140004.png"
+},
+"141001": {
+"th": "แท่งสัมฤทธิ์",
+"en": "Bronze Ingot",
+"type": "Item",
+"slot": "material",
+"icon": "141001.png"
+},
+"141002": {
+"th": "แท่งเหล็ก",
+"en": "Iron Ingot",
+"type": "Item",
+"slot": "material",
+"icon": "141002.png"
+},
+"142001": {
+"th": "แท่งเงิน",
+"en": "Silver Ingot",
+"type": "Item",
+"slot": "material",
+"icon": "142001.png"
+},
+"142002": {
+"th": "แท่งทอง",
+"en": "Gold Ingot",
+"type": "Item",
+"slot": "material",
+"icon": "142002.png"
+},
+"143001": {
+"th": "แท่งฝุ่นดาว",
+"en": "Stardust Ingot",
+"type": "Item",
+"slot": "material",
+"icon": "143001.png"
+},
+"143002": {
+"th": "เหล็กสุญญากาศ",
+"en": "Void Iron",
+"type": "Item",
+"slot": "material",
+"icon": "143002.png"
+},
+"144001": {
+"th": "หินเลือด",
+"en": "Bloodstone",
+"type": "Item",
+"slot": "material",
+"icon": "144001.png"
+},
+"144002": {
+"th": "หินฟ้าผ่า",
+"en": "Thunderstone",
+"type": "Item",
+"slot": "material",
+"icon": "144002.png"
+},
+"145001": {
+"th": "เศษแห่งโกลาหล",
+"en": "Chaos Shard",
+"type": "Item",
+"slot": "material",
+"icon": "145001.png"
+},
+"145002": {
+"th": "แร่อาร์เคน",
+"en": "Arcane Ore",
+"type": "Item",
+"slot": "material",
+"icon": "145002.png"
+},
+"146001": {
+"th": "แท่งเหล็กมืด",
+"en": "Darksteel Ingot",
+"type": "Item",
+"slot": "material",
+"icon": "146001.png"
+},
+"146002": {
+"th": "แร่โอริคัลคัม",
+"en": "Orichalcum Ore",
+"type": "Item",
+"slot": "material",
+"icon": "146002.png"
+},
+"147001": {
+"th": "หินจันทร์",
+"en": "Moonstone",
+"type": "Item",
+"slot": "material",
+"icon": "147001.png"
+},
+"147002": {
+"th": "หินอาทิตย์",
+"en": "Sunstone",
+"type": "Item",
+"slot": "material",
+"icon": "147002.png"
+},
+"148001": {
+"th": "แร่มิธริล",
+"en": "Mithril Ore",
+"type": "Item",
+"slot": "material",
+"icon": "148001.png"
+},
+"148002": {
+"th": "แท่งอีเธอร์",
+"en": "Ethereal Ingot",
+"type": "Item",
+"slot": "material",
+"icon": "148002.png"
+},
+"149001": {
+"th": "แร่อดาแมนเทียม",
+"en": "Adamantium Ore",
+"type": "Item",
+"slot": "material",
+"icon": "149001.png"
+},
+"149002": {
+"th": "แท่งอีออน",
+"en": "Aeon Ingot",
+"type": "Item",
+"slot": "material",
+"icon": "149002.png"
+},
+"150001": {
+"th": null,
+"en": null,
+"type": "Item",
+"slot": "material",
+"icon": "150001.png"
+},
+"150005": {
+"th": null,
+"en": null,
+"type": "Item",
+"slot": "material",
+"icon": "150005.png"
+},
+"150008": {
+"th": null,
+"en": null,
+"type": "Item",
+"slot": "material",
+"icon": "150008.png"
+},
+"160001": {
+"th": "เหรียญครบรอบ 1 ปีราชอาณาจักร",
+"en": "Kingdom 1st Anniversary Coin",
+"type": "Item",
+"slot": "material",
+"icon": "160001.png"
+},
+"160002": {
+"th": "เหรียญครบรอบ 1 ปีจักรวรรดิ",
+"en": "Empire 1st Anniversary Coin",
+"type": "Item",
+"slot": "material",
+"icon": "160002.png"
+},
+"160003": {
+"th": "เหรียญครบรอบ 10 ปีราชอาณาจักร",
+"en": "Kingdom 10th Anniversary Coin",
+"type": "Item",
+"slot": "material",
+"icon": "160003.png"
+},
+"160004": {
+"th": "เหรียญครบรอบ 10 ปีจักรวรรดิ",
+"en": "Empire 10th Anniversary Coin",
+"type": "Item",
+"slot": "material",
+"icon": "160004.png"
+},
+"160005": {
+"th": "เหรียญครบรอบ 50 ปีราชอาณาจักร",
+"en": "Kingdom 50th Anniversary Coin",
+"type": "Item",
+"slot": "material",
+"icon": "160005.png"
+},
+"160006": {
+"th": "เหรียญครบรอบ 50 ปีจักรวรรดิ",
+"en": "Empire 50th Anniversary Coin",
+"type": "Item",
+"slot": "material",
+"icon": "160006.png"
+},
+"160007": {
+"th": "เหรียญครบรอบ 100 ปีราชอาณาจักร",
+"en": "Kingdom 100th Anniversary Coin",
+"type": "Item",
+"slot": "material",
+"icon": "160007.png"
+},
+"160008": {
+"th": "เหรียญครบรอบ 100 ปีจักรวรรดิ",
+"en": "Empire 100th Anniversary Coin",
+"type": "Item",
+"slot": "material",
+"icon": "160008.png"
+},
+"160009": {
+"th": "เหรียญครบรอบ 1000 ปีราชอาณาจักรศักดิ์สิทธิ์",
+"en": "Sacred Kingdom 1000th Anniversary Coin",
+"type": "Item",
+"slot": "material",
+"icon": "160009.png"
+},
+"160010": {
+"th": "เหรียญครบรอบ 1000 ปีจักรวรรดินิรันดร์",
+"en": "Eternal Empire 1000th Anniversary Coin",
+"type": "Item",
+"slot": "material",
+"icon": "160010.png"
+},
+"190001": {
+"th": "หินวิญญาณ - ปกติ",
+"en": "Soulstone - Normal",
+"type": "Item",
+"slot": "material",
+"icon": "190001.png"
+},
+"190002": {
+"th": "หินวิญญาณ - ฝันร้าย",
+"en": "Soulstone - Nightmare",
+"type": "Item",
+"slot": "material",
+"icon": "190002.png"
+},
+"190003": {
+"th": "หินวิญญาณ - นรก",
+"en": "Soulstone - Hell",
+"type": "Item",
+"slot": "material",
+"icon": "190003.png"
+},
+"190004": {
+"th": "หินวิญญาณ - ทรมาน",
+"en": "Soulstone - Torment",
+"type": "Item",
+"slot": "material",
+"icon": "190004.png"
+},
+"300001": {
+"th": "ดาบยาว",
+"en": "Long Sword",
+"type": "SWORD",
+"slot": "weapon",
+"icon": "300001.png"
+},
+"300002": {
+"th": "คัตลาส",
+"en": "Cutlas",
+"type": "SWORD",
+"slot": "weapon",
+"icon": "300002.png"
+},
+"300003": {
+"th": "เรเปียร์",
+"en": "Rapier",
+"type": "SWORD",
+"slot": "weapon",
+"icon": "300003.png"
+},
+"300004": {
+"th": "ดาบบาสตาร์ด",
+"en": "Bastard Sword",
+"type": "SWORD",
+"slot": "weapon",
+"icon": "300004.png"
+},
+"300005": {
+"th": "ดาบใหญ่",
+"en": "Great Sword",
+"type": "SWORD",
+"slot": "weapon",
+"icon": "300005.png"
+},
+"300006": {
+"th": "ดาบหนัก",
+"en": "Heavy Blade",
+"type": "SWORD",
+"slot": "weapon",
+"icon": "300006.png"
+},
+"300007": {
+"th": "ดาบอัศวิน",
+"en": "Knight Sword",
+"type": "SWORD",
+"slot": "weapon",
+"icon": "300007.png"
+},
+"300008": {
+"th": "ดาบแม่ทัพ",
+"en": "Commander's Sword",
+"type": "SWORD",
+"slot": "weapon",
+"icon": "300008.png"
+},
+"300009": {
+"th": "ดาบรูน",
+"en": "Rune Sword",
+"type": "SWORD",
+"slot": "weapon",
+"icon": "300009.png"
+},
+"300010": {
+"th": "ดาบตำนาน",
+"en": "Legend Sword",
+"type": "SWORD",
+"slot": "weapon",
+"icon": "300010.png"
+},
+"300011": {
+"th": "ดาบแห่งโชคชะตา",
+"en": "Fate Sword",
+"type": "SWORD",
+"slot": "weapon",
+"icon": "300011.png"
+},
+"300012": {
+"th": "ดาบวีรบุรุษ",
+"en": "Hero Sword",
+"type": "SWORD",
+"slot": "weapon",
+"icon": "300012.png"
+},
+"300013": {
+"th": "ดาบพายุ",
+"en": "Storm Sword",
+"type": "SWORD",
+"slot": "weapon",
+"icon": "300013.png"
+},
+"300014": {
+"th": "ดาบแห่งการแก้แค้น",
+"en": "Vengeance Sword",
+"type": "SWORD",
+"slot": "weapon",
+"icon": "300014.png"
+},
+"300015": {
+"th": "ดาบสุญญากาศ",
+"en": "Void Blade",
+"type": "SWORD",
+"slot": "weapon",
+"icon": "300015.png"
+},
+"300016": {
+"th": "ดาบคริสตัล",
+"en": "Crystal Blade",
+"type": "SWORD",
+"slot": "weapon",
+"icon": "300016.png"
+},
+"300017": {
+"th": "ดาบมิติ",
+"en": "Dimensional Sword",
+"type": "SWORD",
+"slot": "weapon",
+"icon": "300017.png"
+},
+"300018": {
+"th": "ดาบเงา",
+"en": "Shadow Blade",
+"type": "SWORD",
+"slot": "weapon",
+"icon": "300018.png"
+},
+"300019": {
+"th": "ดาบนิรันดร์",
+"en": "Eternal Sword",
+"type": "SWORD",
+"slot": "weapon",
+"icon": "300019.png"
+},
+"300020": {
+"th": "ดาบรัศมี",
+"en": "Radiant Sword",
+"type": "SWORD",
+"slot": "weapon",
+"icon": "300020.png"
+},
+"310001": {
+"th": "ธนูสั้น",
+"en": "Short Bow",
+"type": "BOW",
+"slot": "weapon",
+"icon": "310001.png"
+},
+"310002": {
+"th": "ธนูล่าสัตว์",
+"en": "Hunting Bow",
+"type": "BOW",
+"slot": "weapon",
+"icon": "310002.png"
+},
+"310003": {
+"th": "ธนูยาว",
+"en": "Long Bow",
+"type": "BOW",
+"slot": "weapon",
+"icon": "310003.png"
+},
+"310004": {
+"th": "ธนูผสม",
+"en": "Composite Bow",
+"type": "BOW",
+"slot": "weapon",
+"icon": "310004.png"
+},
+"310005": {
+"th": "ธนูสงคราม",
+"en": "War Bow",
+"type": "BOW",
+"slot": "weapon",
+"icon": "310005.png"
+},
+"310006": {
+"th": "ธนูแดงเข้ม",
+"en": "Scarlet Bow",
+"type": "BOW",
+"slot": "weapon",
+"icon": "310006.png"
+},
+"310007": {
+"th": "ธนูสนธยา",
+"en": "Dusk Bow",
+"type": "BOW",
+"slot": "weapon",
+"icon": "310007.png"
+},
+"310008": {
+"th": "ธนูหยก",
+"en": "Jade Bow",
+"type": "BOW",
+"slot": "weapon",
+"icon": "310008.png"
+},
+"310009": {
+"th": "ธนูชั้นยอด",
+"en": "Elite Bow",
+"type": "BOW",
+"slot": "weapon",
+"icon": "310009.png"
+},
+"310010": {
+"th": "ธนูรูน",
+"en": "Rune Bow",
+"type": "BOW",
+"slot": "weapon",
+"icon": "310010.png"
+},
+"310011": {
+"th": "ธนูลึกลับ",
+"en": "Mystic Bow",
+"type": "BOW",
+"slot": "weapon",
+"icon": "310011.png"
+},
+"310012": {
+"th": "ธนูเร็ว",
+"en": "Swift Bow",
+"type": "BOW",
+"slot": "weapon",
+"icon": "310012.png"
+},
+"310013": {
+"th": "ธนูโบราณ",
+"en": "Ancient Bow",
+"type": "BOW",
+"slot": "weapon",
+"icon": "310013.png"
+},
+"310014": {
+"th": "ธนูไร้ขีดจำกัด",
+"en": "Limitless Bow",
+"type": "BOW",
+"slot": "weapon",
+"icon": "310014.png"
+},
+"310015": {
+"th": "ธนูแห่งโกลาหล",
+"en": "Chaos Bow",
+"type": "BOW",
+"slot": "weapon",
+"icon": "310015.png"
+},
+"310016": {
+"th": "ธนูพายุ",
+"en": "Storm Bow",
+"type": "BOW",
+"slot": "weapon",
+"icon": "310016.png"
+},
+"310017": {
+"th": "ธนูเงา",
+"en": "Shadow Bow",
+"type": "BOW",
+"slot": "weapon",
+"icon": "310017.png"
+},
+"310018": {
+"th": "ธนูพายุร้าย",
+"en": "Tempest Bow",
+"type": "BOW",
+"slot": "weapon",
+"icon": "310018.png"
+},
+"310019": {
+"th": "ธนูนิรันดร์",
+"en": "Eternal Bow",
+"type": "BOW",
+"slot": "weapon",
+"icon": "310019.png"
+},
+"310020": {
+"th": "ธนูรัศมี",
+"en": "Radiant Bow",
+"type": "BOW",
+"slot": "weapon",
+"icon": "310020.png"
+},
+"320001": {
+"th": "คทาไม้",
+"en": "Wooden Staff",
+"type": "STAFF",
+"slot": "weapon",
+"icon": "320001.png"
+},
+"320002": {
+"th": "คทาผู้ส่งสาร",
+"en": "Herald Staff",
+"type": "STAFF",
+"slot": "weapon",
+"icon": "320002.png"
+},
+"320003": {
+"th": "คทายาว",
+"en": "Long Staff",
+"type": "STAFF",
+"slot": "weapon",
+"icon": "320003.png"
+},
+"320004": {
+"th": "คทาแม่มด",
+"en": "Witch Staff",
+"type": "STAFF",
+"slot": "weapon",
+"icon": "320004.png"
+},
+"320005": {
+"th": "คทาสีคราม",
+"en": "Azure Staff",
+"type": "STAFF",
+"slot": "weapon",
+"icon": "320005.png"
+},
+"320006": {
+"th": "คทาผู้อาวุโส",
+"en": "Elder Staff",
+"type": "STAFF",
+"slot": "weapon",
+"icon": "320006.png"
+},
+"320007": {
+"th": "คทาปราชญ์",
+"en": "Sage Staff",
+"type": "STAFF",
+"slot": "weapon",
+"icon": "320007.png"
+},
+"320008": {
+"th": "คทาลึกลับ",
+"en": "Mystic Staff",
+"type": "STAFF",
+"slot": "weapon",
+"icon": "320008.png"
+},
+"320009": {
+"th": "คทาดาวหาง",
+"en": "Comet Staff",
+"type": "STAFF",
+"slot": "weapon",
+"icon": "320009.png"
+},
+"320010": {
+"th": "คทาคริสตัล",
+"en": "Crystal Staff",
+"type": "STAFF",
+"slot": "weapon",
+"icon": "320010.png"
+},
+"320011": {
+"th": "คทาสุญญากาศ",
+"en": "Void Staff",
+"type": "STAFF",
+"slot": "weapon",
+"icon": "320011.png"
+},
+"320012": {
+"th": "คทาผู้พิชิต",
+"en": "Conqueror Staff",
+"type": "STAFF",
+"slot": "weapon",
+"icon": "320012.png"
+},
+"320013": {
+"th": "คทาโบราณ",
+"en": "Ancient Staff",
+"type": "STAFF",
+"slot": "weapon",
+"icon": "320013.png"
+},
+"320014": {
+"th": "คทาศักดิ์สิทธิ์",
+"en": "Sacred Staff",
+"type": "STAFF",
+"slot": "weapon",
+"icon": "320014.png"
+},
+"320015": {
+"th": "คทาเหวลึก",
+"en": "Abyssal Staff",
+"type": "STAFF",
+"slot": "weapon",
+"icon": "320015.png"
+},
+"320016": {
+"th": "คทาแห่งโกลาหล",
+"en": "Chaos Staff",
+"type": "STAFF",
+"slot": "weapon",
+"icon": "320016.png"
+},
+"320017": {
+"th": "คทาพายุร้าย",
+"en": "Tempest Staff",
+"type": "STAFF",
+"slot": "weapon",
+"icon": "320017.png"
+},
+"320018": {
+"th": "คทาโนวา",
+"en": "Nova Staff",
+"type": "STAFF",
+"slot": "weapon",
+"icon": "320018.png"
+},
+"320019": {
+"th": "คทานิรันดร์",
+"en": "Eternal Staff",
+"type": "STAFF",
+"slot": "weapon",
+"icon": "320019.png"
+},
+"320020": {
+"th": "คทารัศมี",
+"en": "Radiant Staff",
+"type": "STAFF",
+"slot": "weapon",
+"icon": "320020.png"
+},
+"330001": {
+"th": "คทามือใหม่",
+"en": "Novice Scepter",
+"type": "SCEPTER",
+"slot": "weapon",
+"icon": "330001.png"
+},
+"330002": {
+"th": "คทาเหล็ก",
+"en": "Iron Scepter",
+"type": "SCEPTER",
+"slot": "weapon",
+"icon": "330002.png"
+},
+"330003": {
+"th": "คทาอวยพร",
+"en": "Blessed Scepter",
+"type": "SCEPTER",
+"slot": "weapon",
+"icon": "330003.png"
+},
+"330004": {
+"th": "คทาเหล็กกล้า",
+"en": "Steel Scepter",
+"type": "SCEPTER",
+"slot": "weapon",
+"icon": "330004.png"
+},
+"330005": {
+"th": "คทาศักดิ์สิทธิ์",
+"en": "Sacred Scepter",
+"type": "SCEPTER",
+"slot": "weapon",
+"icon": "330005.png"
+},
+"330006": {
+"th": "คทาบิชอป",
+"en": "Bishop's Scepter",
+"type": "SCEPTER",
+"slot": "weapon",
+"icon": "330006.png"
+},
+"330007": {
+"th": "คทาแห่งศรัทธา",
+"en": "Devout Scepter",
+"type": "SCEPTER",
+"slot": "weapon",
+"icon": "330007.png"
+},
+"330008": {
+"th": "คทาหนัก",
+"en": "Heavy Scepter",
+"type": "SCEPTER",
+"slot": "weapon",
+"icon": "330008.png"
+},
+"330009": {
+"th": "คทารูน",
+"en": "Rune Scepter",
+"type": "SCEPTER",
+"slot": "weapon",
+"icon": "330009.png"
+},
+"330010": {
+"th": "คทาตำนาน",
+"en": "Legend Scepter",
+"type": "SCEPTER",
+"slot": "weapon",
+"icon": "330010.png"
+},
+"330011": {
+"th": "คทาแห่งโชคชะตา",
+"en": "Fate Scepter",
+"type": "SCEPTER",
+"slot": "weapon",
+"icon": "330011.png"
+},
+"330012": {
+"th": "คทาวีรบุรุษ",
+"en": "Hero Scepter",
+"type": "SCEPTER",
+"slot": "weapon",
+"icon": "330012.png"
+},
+"330013": {
+"th": "คทาพายุ",
+"en": "Storm Scepter",
+"type": "SCEPTER",
+"slot": "weapon",
+"icon": "330013.png"
+},
+"330014": {
+"th": "คทาไร้ขีดจำกัด",
+"en": "Limitless Scepter",
+"type": "SCEPTER",
+"slot": "weapon",
+"icon": "330014.png"
+},
+"330015": {
+"th": "คทาแห่งโกลาหล",
+"en": "Chaos Scepter",
+"type": "SCEPTER",
+"slot": "weapon",
+"icon": "330015.png"
+},
+"330016": {
+"th": "คทาพลัง",
+"en": "Power Scepter",
+"type": "SCEPTER",
+"slot": "weapon",
+"icon": "330016.png"
+},
+"330017": {
+"th": "คทามิติ",
+"en": "Dimensional Scepter",
+"type": "SCEPTER",
+"slot": "weapon",
+"icon": "330017.png"
+},
+"330018": {
+"th": "คทาเงา",
+"en": "Shadow Scepter",
+"type": "SCEPTER",
+"slot": "weapon",
+"icon": "330018.png"
+},
+"330019": {
+"th": "คทานิรันดร์",
+"en": "Eternal Scepter",
+"type": "SCEPTER",
+"slot": "weapon",
+"icon": "330019.png"
+},
+"330020": {
+"th": "คทารัศมี",
+"en": "Radiant Scepter",
+"type": "SCEPTER",
+"slot": "weapon",
+"icon": "330020.png"
+},
+"340001": {
+"th": "หน้าไม้สั้น",
+"en": "Short Crossbow",
+"type": "CROSSBOW",
+"slot": "weapon",
+"icon": "340001.png"
+},
+"340002": {
+"th": "หน้าไม้หนัง",
+"en": "Leather Crossbow",
+"type": "CROSSBOW",
+"slot": "weapon",
+"icon": "340002.png"
+},
+"340003": {
+"th": "หน้าไม้ยาว",
+"en": "Long Crossbow",
+"type": "CROSSBOW",
+"slot": "weapon",
+"icon": "340003.png"
+},
+"340004": {
+"th": "หน้าไม้สมบูรณ์",
+"en": "Complete Crossbow",
+"type": "CROSSBOW",
+"slot": "weapon",
+"icon": "340004.png"
+},
+"340005": {
+"th": "หน้าไม้ชั้นเยี่ยม",
+"en": "Exceptional Crossbow",
+"type": "CROSSBOW",
+"slot": "weapon",
+"icon": "340005.png"
+},
+"340006": {
+"th": "หน้าไม้เสริมเกราะ",
+"en": "Reinforced Crossbow",
+"type": "CROSSBOW",
+"slot": "weapon",
+"icon": "340006.png"
+},
+"340007": {
+"th": "หน้าไม้เหล็ก",
+"en": "Iron Crossbow",
+"type": "CROSSBOW",
+"slot": "weapon",
+"icon": "340007.png"
+},
+"340008": {
+"th": "หน้าไม้ปีก",
+"en": "Wing Crossbow",
+"type": "CROSSBOW",
+"slot": "weapon",
+"icon": "340008.png"
+},
+"340009": {
+"th": "หน้าไม้ชั้นยอด",
+"en": "Elite Crossbow",
+"type": "CROSSBOW",
+"slot": "weapon",
+"icon": "340009.png"
+},
+"340010": {
+"th": "หน้าไม้ขนาดใหญ่",
+"en": "Large Crossbow",
+"type": "CROSSBOW",
+"slot": "weapon",
+"icon": "340010.png"
+},
+"340011": {
+"th": "หน้าไม้ลึกลับ",
+"en": "Mystic Crossbow",
+"type": "CROSSBOW",
+"slot": "weapon",
+"icon": "340011.png"
+},
+"340012": {
+"th": "หน้าไม้เร็ว",
+"en": "Fast Crossbow",
+"type": "CROSSBOW",
+"slot": "weapon",
+"icon": "340012.png"
+},
+"340013": {
+"th": "หน้าไม้โบราณ",
+"en": "Ancient Crossbow",
+"type": "CROSSBOW",
+"slot": "weapon",
+"icon": "340013.png"
+},
+"340014": {
+"th": "หน้าไม้ไร้ขีดจำกัด",
+"en": "Limitless Crossbow",
+"type": "CROSSBOW",
+"slot": "weapon",
+"icon": "340014.png"
+},
+"340015": {
+"th": "หน้าไม้แห่งโกลาหล",
+"en": "Chaos Crossbow",
+"type": "CROSSBOW",
+"slot": "weapon",
+"icon": "340015.png"
+},
+"340016": {
+"th": "หน้าไม้พลัง",
+"en": "Power Crossbow",
+"type": "CROSSBOW",
+"slot": "weapon",
+"icon": "340016.png"
+},
+"340017": {
+"th": "หน้าไม้มิติ",
+"en": "Dimensional Crossbow",
+"type": "CROSSBOW",
+"slot": "weapon",
+"icon": "340017.png"
+},
+"340018": {
+"th": "หน้าไม้เงา",
+"en": "Shadow Crossbow",
+"type": "CROSSBOW",
+"slot": "weapon",
+"icon": "340018.png"
+},
+"340019": {
+"th": "หน้าไม้นิรันดร์",
+"en": "Eternal Crossbow",
+"type": "CROSSBOW",
+"slot": "weapon",
+"icon": "340019.png"
+},
+"340020": {
+"th": "หน้าไม้รัศมี",
+"en": "Radiant Crossbow",
+"type": "CROSSBOW",
+"slot": "weapon",
+"icon": "340020.png"
+},
+"350001": {
+"th": "ขวานไม้",
+"en": "Wooden Axe",
+"type": "AXE",
+"slot": "weapon",
+"icon": "350001.png"
+},
+"350002": {
+"th": "ขวานเหล็ก",
+"en": "Iron Axe",
+"type": "AXE",
+"slot": "weapon",
+"icon": "350002.png"
+},
+"350003": {
+"th": "ขวานรบ",
+"en": "Battle Axe",
+"type": "AXE",
+"slot": "weapon",
+"icon": "350003.png"
+},
+"350004": {
+"th": "ขวานเหล็กกล้า",
+"en": "Steel Axe",
+"type": "AXE",
+"slot": "weapon",
+"icon": "350004.png"
+},
+"350005": {
+"th": "ขวานสงคราม",
+"en": "War Axe",
+"type": "AXE",
+"slot": "weapon",
+"icon": "350005.png"
+},
+"350006": {
+"th": "ขวานอัศวิน",
+"en": "Knight's Axe",
+"type": "AXE",
+"slot": "weapon",
+"icon": "350006.png"
+},
+"350007": {
+"th": "ขวานใหญ่",
+"en": "Great Axe",
+"type": "AXE",
+"slot": "weapon",
+"icon": "350007.png"
+},
+"350008": {
+"th": "ขวานหนัก",
+"en": "Heavy Axe",
+"type": "AXE",
+"slot": "weapon",
+"icon": "350008.png"
+},
+"350009": {
+"th": "ขวานรูน",
+"en": "Rune Axe",
+"type": "AXE",
+"slot": "weapon",
+"icon": "350009.png"
+},
+"350010": {
+"th": "ขวานตำนาน",
+"en": "Legend Axe",
+"type": "AXE",
+"slot": "weapon",
+"icon": "350010.png"
+},
+"350011": {
+"th": "ขวานแห่งโชคชะตา",
+"en": "Fate Axe",
+"type": "AXE",
+"slot": "weapon",
+"icon": "350011.png"
+},
+"350012": {
+"th": "ขวานวีรบุรุษ",
+"en": "Hero Axe",
+"type": "AXE",
+"slot": "weapon",
+"icon": "350012.png"
+},
+"350013": {
+"th": "ขวานพายุ",
+"en": "Storm Axe",
+"type": "AXE",
+"slot": "weapon",
+"icon": "350013.png"
+},
+"350014": {
+"th": "ขวานไร้ขีดจำกัด",
+"en": "Limitless Axe",
+"type": "AXE",
+"slot": "weapon",
+"icon": "350014.png"
+},
+"350015": {
+"th": "ขวานแห่งโกลาหล",
+"en": "Chaos Axe",
+"type": "AXE",
+"slot": "weapon",
+"icon": "350015.png"
+},
+"350016": {
+"th": "ขวานพลัง",
+"en": "Power Axe",
+"type": "AXE",
+"slot": "weapon",
+"icon": "350016.png"
+},
+"350017": {
+"th": "ขวานมิติ",
+"en": "Dimensional Axe",
+"type": "AXE",
+"slot": "weapon",
+"icon": "350017.png"
+},
+"350018": {
+"th": "ขวานเงา",
+"en": "Shadow Axe",
+"type": "AXE",
+"slot": "weapon",
+"icon": "350018.png"
+},
+"350019": {
+"th": "ขวานนิรันดร์",
+"en": "Eternal Axe",
+"type": "AXE",
+"slot": "weapon",
+"icon": "350019.png"
+},
+"350020": {
+"th": "ขวานรัศมี",
+"en": "Radiant Axe",
+"type": "AXE",
+"slot": "weapon",
+"icon": "350020.png"
+},
+"400001": {
+"th": "โล่เล็ก",
+"en": "Buckler",
+"type": "SHIELD",
+"slot": "offhand",
+"icon": "400001.png"
+},
+"400002": {
+"th": "โล่ไม้",
+"en": "Wooden Shield",
+"type": "SHIELD",
+"slot": "offhand",
+"icon": "400002.png"
+},
+"400003": {
+"th": "โล่เหล็ก",
+"en": "Iron Shield",
+"type": "SHIELD",
+"slot": "offhand",
+"icon": "400003.png"
+},
+"400004": {
+"th": "โล่ฮีตเตอร์",
+"en": "Heater Shield",
+"type": "SHIELD",
+"slot": "offhand",
+"icon": "400004.png"
+},
+"400005": {
+"th": "โล่หนัก",
+"en": "Heavy Shield",
+"type": "SHIELD",
+"slot": "offhand",
+"icon": "400005.png"
+},
+"400006": {
+"th": "โล่ป่า",
+"en": "Forest Shield",
+"type": "SHIELD",
+"slot": "offhand",
+"icon": "400006.png"
+},
+"400007": {
+"th": "โล่สงคราม",
+"en": "War Shield",
+"type": "SHIELD",
+"slot": "offhand",
+"icon": "400007.png"
+},
+"400008": {
+"th": "โล่กำแพง",
+"en": "Barrier Shield",
+"type": "SHIELD",
+"slot": "offhand",
+"icon": "400008.png"
+},
+"400009": {
+"th": "โล่ชั้นยอด",
+"en": "Elite Shield",
+"type": "SHIELD",
+"slot": "offhand",
+"icon": "400009.png"
+},
+"400010": {
+"th": "โล่สีแดงเข้ม",
+"en": "Crimson Shield",
+"type": "SHIELD",
+"slot": "offhand",
+"icon": "400010.png"
+},
+"400011": {
+"th": "โล่ลึกลับ",
+"en": "Mystic Shield",
+"type": "SHIELD",
+"slot": "offhand",
+"icon": "400011.png"
+},
+"400012": {
+"th": "โล่ใหญ่",
+"en": "Grand Shield",
+"type": "SHIELD",
+"slot": "offhand",
+"icon": "400012.png"
+},
+"400013": {
+"th": "โล่โบราณ",
+"en": "Ancient Shield",
+"type": "SHIELD",
+"slot": "offhand",
+"icon": "400013.png"
+},
+"400014": {
+"th": "โล่สว่างไสว",
+"en": "Radiant Shield",
+"type": "SHIELD",
+"slot": "offhand",
+"icon": "400014.png"
+},
+"400015": {
+"th": "โล่สุญญากาศ",
+"en": "Void Shield",
+"type": "SHIELD",
+"slot": "offhand",
+"icon": "400015.png"
+},
+"400016": {
+"th": "โล่เทพ",
+"en": "Divine Shield",
+"type": "SHIELD",
+"slot": "offhand",
+"icon": "400016.png"
+},
+"400017": {
+"th": "โล่มิติ",
+"en": "Dimensional Shield",
+"type": "SHIELD",
+"slot": "offhand",
+"icon": "400017.png"
+},
+"400018": {
+"th": "โล่เงา",
+"en": "Shadow Shield",
+"type": "SHIELD",
+"slot": "offhand",
+"icon": "400018.png"
+},
+"400019": {
+"th": "โล่นิรันดร์",
+"en": "Eternal Shield",
+"type": "SHIELD",
+"slot": "offhand",
+"icon": "400019.png"
+},
+"400020": {
+"th": "โล่มังกร",
+"en": "Dragon Shield",
+"type": "SHIELD",
+"slot": "offhand",
+"icon": "400020.png"
+},
+"410001": {
+"th": "ลูกธนูไม้",
+"en": "Wooden Arrow",
+"type": "ARROW",
+"slot": "offhand",
+"icon": "410001.png"
+},
+"410002": {
+"th": "ลูกธนูเหล็ก",
+"en": "Iron Arrow",
+"type": "ARROW",
+"slot": "offhand",
+"icon": "410002.png"
+},
+"410003": {
+"th": "ลูกธนูนักล่า",
+"en": "Hunter's Arrow",
+"type": "ARROW",
+"slot": "offhand",
+"icon": "410003.png"
+},
+"410004": {
+"th": "ลูกธนูหนามแหลม",
+"en": "Barbed Arrow",
+"type": "ARROW",
+"slot": "offhand",
+"icon": "410004.png"
+},
+"410005": {
+"th": "ลูกธนูสีคราม",
+"en": "Azure Arrow",
+"type": "ARROW",
+"slot": "offhand",
+"icon": "410005.png"
+},
+"410006": {
+"th": "ลูกธนูป่าเถื่อน",
+"en": "Brutal Arrow",
+"type": "ARROW",
+"slot": "offhand",
+"icon": "410006.png"
+},
+"410007": {
+"th": "ลูกธนูลมพายุ",
+"en": "Gale Arrow",
+"type": "ARROW",
+"slot": "offhand",
+"icon": "410007.png"
+},
+"410008": {
+"th": "ลูกธนูงู",
+"en": "Serpent Arrow",
+"type": "ARROW",
+"slot": "offhand",
+"icon": "410008.png"
+},
+"410009": {
+"th": "ลูกธนูรูน",
+"en": "Rune Arrow",
+"type": "ARROW",
+"slot": "offhand",
+"icon": "410009.png"
+},
+"410010": {
+"th": "ลูกธนูชนเผ่า",
+"en": "Tribal Arrow",
+"type": "ARROW",
+"slot": "offhand",
+"icon": "410010.png"
+},
+"410011": {
+"th": "ลูกธนูโชคชะตา",
+"en": "Fate Arrow",
+"type": "ARROW",
+"slot": "offhand",
+"icon": "410011.png"
+},
+"410012": {
+"th": "ลูกธนูพายุ",
+"en": "Storm Arrow",
+"type": "ARROW",
+"slot": "offhand",
+"icon": "410012.png"
+},
+"410013": {
+"th": "ลูกธนูออบซิเดียน",
+"en": "Obsidian Arrow",
+"type": "ARROW",
+"slot": "offhand",
+"icon": "410013.png"
+},
+"410014": {
+"th": "ลูกธนูเร่งความเร็ว",
+"en": "Haste Arrow",
+"type": "ARROW",
+"slot": "offhand",
+"icon": "410014.png"
+},
+"410015": {
+"th": "ลูกธนูสุญญากาศ",
+"en": "Void Arrow",
+"type": "ARROW",
+"slot": "offhand",
+"icon": "410015.png"
+},
+"410016": {
+"th": "ลูกธนูพิษ",
+"en": "Poison Arrow",
+"type": "ARROW",
+"slot": "offhand",
+"icon": "410016.png"
+},
+"410017": {
+"th": "ลูกธนูมิติ",
+"en": "Dimensional Arrow",
+"type": "ARROW",
+"slot": "offhand",
+"icon": "410017.png"
+},
+"410018": {
+"th": "ลูกธนูเงา",
+"en": "Shadow Arrow",
+"type": "ARROW",
+"slot": "offhand",
+"icon": "410018.png"
+},
+"410019": {
+"th": "ลูกธนูโบราณ",
+"en": "Ancient Arrow",
+"type": "ARROW",
+"slot": "offhand",
+"icon": "410019.png"
+},
+"410020": {
+"th": "ลูกธนูสูงส่ง",
+"en": "Exalted Arrow",
+"type": "ARROW",
+"slot": "offhand",
+"icon": "410020.png"
+},
+"420001": {
+"th": "ลูกแก้วเวทมนตร์",
+"en": "Magic Orb",
+"type": "ORB",
+"slot": "offhand",
+"icon": "420001.png"
+},
+"420002": {
+"th": "ลูกแก้วผู้อาวุโส",
+"en": "Elder Orb",
+"type": "ORB",
+"slot": "offhand",
+"icon": "420002.png"
+},
+"420003": {
+"th": "ลูกแก้วเจิดจรัส",
+"en": "Brilliant Orb",
+"type": "ORB",
+"slot": "offhand",
+"icon": "420003.png"
+},
+"420004": {
+"th": "ลูกแก้วน้ำแข็ง",
+"en": "Frozen Orb",
+"type": "ORB",
+"slot": "offhand",
+"icon": "420004.png"
+},
+"420005": {
+"th": "ลูกแก้วทำนาย",
+"en": "Prophecy Orb",
+"type": "ORB",
+"slot": "offhand",
+"icon": "420005.png"
+},
+"420006": {
+"th": "ลูกแก้วมืด",
+"en": "Dark Orb",
+"type": "ORB",
+"slot": "offhand",
+"icon": "420006.png"
+},
+"420007": {
+"th": "ลูกแก้วรูน",
+"en": "Rune Orb",
+"type": "ORB",
+"slot": "offhand",
+"icon": "420007.png"
+},
+"420008": {
+"th": "ลูกแก้วเปล่งแสง",
+"en": "Shining Orb",
+"type": "ORB",
+"slot": "offhand",
+"icon": "420008.png"
+},
+"420009": {
+"th": "ลูกแก้วอาร์เคน",
+"en": "Arcane Orb",
+"type": "ORB",
+"slot": "offhand",
+"icon": "420009.png"
+},
+"420010": {
+"th": "ลูกแก้วโชคชะตา",
+"en": "Fate Orb",
+"type": "ORB",
+"slot": "offhand",
+"icon": "420010.png"
+},
+"420011": {
+"th": "ลูกแก้วลึกลับ",
+"en": "Mystic Orb",
+"type": "ORB",
+"slot": "offhand",
+"icon": "420011.png"
+},
+"420012": {
+"th": "ลูกแก้วท้องฟ้า",
+"en": "Sky Orb",
+"type": "ORB",
+"slot": "offhand",
+"icon": "420012.png"
+},
+"420013": {
+"th": "ลูกแก้ววิญญาณ",
+"en": "Spirit Orb",
+"type": "ORB",
+"slot": "offhand",
+"icon": "420013.png"
+},
+"420014": {
+"th": "ลูกแก้วโบราณ",
+"en": "Ancient Orb",
+"type": "ORB",
+"slot": "offhand",
+"icon": "420014.png"
+},
+"420015": {
+"th": "ลูกแก้วเหวลึก",
+"en": "Abyssal Orb",
+"type": "ORB",
+"slot": "offhand",
+"icon": "420015.png"
+},
+"420016": {
+"th": "ลูกแก้วสุญญากาศ",
+"en": "Void Orb",
+"type": "ORB",
+"slot": "offhand",
+"icon": "420016.png"
+},
+"420017": {
+"th": "ลูกแก้วมิติ",
+"en": "Dimensional Orb",
+"type": "ORB",
+"slot": "offhand",
+"icon": "420017.png"
+},
+"420018": {
+"th": "ลูกแก้วเงา",
+"en": "Shadow Orb",
+"type": "ORB",
+"slot": "offhand",
+"icon": "420018.png"
+},
+"420019": {
+"th": "ลูกแก้วนิรันดร์",
+"en": "Eternal Orb",
+"type": "ORB",
+"slot": "offhand",
+"icon": "420019.png"
+},
+"420020": {
+"th": "ลูกแก้วทองอร่าม",
+"en": "Aureate Orb",
+"type": "ORB",
+"slot": "offhand",
+"icon": "420020.png"
+},
+"430001": {
+"th": "คัมภีร์สวดมนต์",
+"en": "Prayer Tome",
+"type": "TOME",
+"slot": "offhand",
+"icon": "430001.png"
+},
+"430002": {
+"th": "คัมภีร์จักรวรรดิ",
+"en": "Empire Tome",
+"type": "TOME",
+"slot": "offhand",
+"icon": "430002.png"
+},
+"430003": {
+"th": "คัมภีร์เหล็ก",
+"en": "Iron Tome",
+"type": "TOME",
+"slot": "offhand",
+"icon": "430003.png"
+},
+"430004": {
+"th": "คัมภีร์อัศวิน",
+"en": "Knight's Tome",
+"type": "TOME",
+"slot": "offhand",
+"icon": "430004.png"
+},
+"430005": {
+"th": "คัมภีร์อวยพร",
+"en": "Blessed Tome",
+"type": "TOME",
+"slot": "offhand",
+"icon": "430005.png"
+},
+"430006": {
+"th": "คัมภีร์ผู้บัญชาการ",
+"en": "Commander's Tome",
+"type": "TOME",
+"slot": "offhand",
+"icon": "430006.png"
+},
+"430007": {
+"th": "คัมภีร์สงคราม",
+"en": "War Tome",
+"type": "TOME",
+"slot": "offhand",
+"icon": "430007.png"
+},
+"430008": {
+"th": "คัมภีร์จักรพรรดิ",
+"en": "Emperor's Tome",
+"type": "TOME",
+"slot": "offhand",
+"icon": "430008.png"
+},
+"430009": {
+"th": "คัมภีร์รูน",
+"en": "Rune Tome",
+"type": "TOME",
+"slot": "offhand",
+"icon": "430009.png"
+},
+"430010": {
+"th": "คัมภีร์สีเลือด",
+"en": "Crimson Tome",
+"type": "TOME",
+"slot": "offhand",
+"icon": "430010.png"
+},
+"430011": {
+"th": "คัมภีร์โชคชะตา",
+"en": "Fate Tome",
+"type": "TOME",
+"slot": "offhand",
+"icon": "430011.png"
+},
+"430012": {
+"th": "คัมภีร์อลังการ",
+"en": "Grand Tome",
+"type": "TOME",
+"slot": "offhand",
+"icon": "430012.png"
+},
+"430013": {
+"th": "คัมภีร์พายุ",
+"en": "Storm Tome",
+"type": "TOME",
+"slot": "offhand",
+"icon": "430013.png"
+},
+"430014": {
+"th": "คัมภีร์นักรบ",
+"en": "Warrior's Tome",
+"type": "TOME",
+"slot": "offhand",
+"icon": "430014.png"
+},
+"430015": {
+"th": "คัมภีร์ความว่างเปล่า",
+"en": "Void Tome",
+"type": "TOME",
+"slot": "offhand",
+"icon": "430015.png"
+},
+"430016": {
+"th": "คัมภีร์คริสตัล",
+"en": "Crystal Tome",
+"type": "TOME",
+"slot": "offhand",
+"icon": "430016.png"
+},
+"430017": {
+"th": "คัมภีร์มิติ",
+"en": "Dimensional Tome",
+"type": "TOME",
+"slot": "offhand",
+"icon": "430017.png"
+},
+"430018": {
+"th": "คัมภีร์เงา",
+"en": "Shadow Tome",
+"type": "TOME",
+"slot": "offhand",
+"icon": "430018.png"
+},
+"430019": {
+"th": "คัมภีร์นิรันดร์",
+"en": "Eternal Tome",
+"type": "TOME",
+"slot": "offhand",
+"icon": "430019.png"
+},
+"430020": {
+"th": "คัมภีร์สวรรค์",
+"en": "Empyrean Tome",
+"type": "TOME",
+"slot": "offhand",
+"icon": "430020.png"
+},
+"440001": {
+"th": "สลักสั้น",
+"en": "Short Bolt",
+"type": "BOLT",
+"slot": "offhand",
+"icon": "440001.png"
+},
+"440002": {
+"th": "สลักแห่งความกลัว",
+"en": "Fear Bolt",
+"type": "BOLT",
+"slot": "offhand",
+"icon": "440002.png"
+},
+"440003": {
+"th": "สลักนายพราน",
+"en": "Hunter's Bolt",
+"type": "BOLT",
+"slot": "offhand",
+"icon": "440003.png"
+},
+"440004": {
+"th": "สลักหนาม",
+"en": "Barbed Bolt",
+"type": "BOLT",
+"slot": "offhand",
+"icon": "440004.png"
+},
+"440005": {
+"th": "สลักอสูร",
+"en": "Beast Bolt",
+"type": "BOLT",
+"slot": "offhand",
+"icon": "440005.png"
+},
+"440006": {
+"th": "สลักเร็ว",
+"en": "Swift Bolt",
+"type": "BOLT",
+"slot": "offhand",
+"icon": "440006.png"
+},
+"440007": {
+"th": "สลักเหล็ก",
+"en": "Iron Bolt",
+"type": "BOLT",
+"slot": "offhand",
+"icon": "440007.png"
+},
+"440008": {
+"th": "สลักหนัก",
+"en": "Heavy Bolt",
+"type": "BOLT",
+"slot": "offhand",
+"icon": "440008.png"
+},
+"440009": {
+"th": "สลักรูน",
+"en": "Rune Bolt",
+"type": "BOLT",
+"slot": "offhand",
+"icon": "440009.png"
+},
+"440010": {
+"th": "สลักวีรบุรุษ",
+"en": "Hero Bolt",
+"type": "BOLT",
+"slot": "offhand",
+"icon": "440010.png"
+},
+"440011": {
+"th": "สลักโชคชะตา",
+"en": "Fate Bolt",
+"type": "BOLT",
+"slot": "offhand",
+"icon": "440011.png"
+},
+"440012": {
+"th": "สลักพายุ",
+"en": "Storm Bolt",
+"type": "BOLT",
+"slot": "offhand",
+"icon": "440012.png"
+},
+"440013": {
+"th": "สลักสายฟ้า",
+"en": "Thunder Bolt",
+"type": "BOLT",
+"slot": "offhand",
+"icon": "440013.png"
+},
+"440014": {
+"th": "สลักเร่งรีบ",
+"en": "Haste Bolt",
+"type": "BOLT",
+"slot": "offhand",
+"icon": "440014.png"
+},
+"440015": {
+"th": "สลักความว่างเปล่า",
+"en": "Void Bolt",
+"type": "BOLT",
+"slot": "offhand",
+"icon": "440015.png"
+},
+"440016": {
+"th": "สลักพิษ",
+"en": "Poison Bolt",
+"type": "BOLT",
+"slot": "offhand",
+"icon": "440016.png"
+},
+"440017": {
+"th": "สลักมิติ",
+"en": "Dimensional Bolt",
+"type": "BOLT",
+"slot": "offhand",
+"icon": "440017.png"
+},
+"440018": {
+"th": "สลักเงา",
+"en": "Shadow Bolt",
+"type": "BOLT",
+"slot": "offhand",
+"icon": "440018.png"
+},
+"440019": {
+"th": "สลักโบราณ",
+"en": "Ancient Bolt",
+"type": "BOLT",
+"slot": "offhand",
+"icon": "440019.png"
+},
+"440020": {
+"th": "สลักศักดิ์สิทธิ์",
+"en": "Sanctified Bolt",
+"type": "BOLT",
+"slot": "offhand",
+"icon": "440020.png"
+},
+"450001": {
+"th": "ขวานสั้น",
+"en": "Short Hatchet",
+"type": "HATCHET",
+"slot": "offhand",
+"icon": "450001.png"
+},
+"450002": {
+"th": "ขวานหนัง",
+"en": "Leather Hatchet",
+"type": "HATCHET",
+"slot": "offhand",
+"icon": "450002.png"
+},
+"450003": {
+"th": "ขวานยาว",
+"en": "Long Hatchet",
+"type": "HATCHET",
+"slot": "offhand",
+"icon": "450003.png"
+},
+"450004": {
+"th": "ขวานเหล็กกล้า",
+"en": "Steel Hatchet",
+"type": "HATCHET",
+"slot": "offhand",
+"icon": "450004.png"
+},
+"450005": {
+"th": "ขวานสงคราม",
+"en": "War Hatchet",
+"type": "HATCHET",
+"slot": "offhand",
+"icon": "450005.png"
+},
+"450006": {
+"th": "ขวานประกอบ",
+"en": "Composite Hatchet",
+"type": "HATCHET",
+"slot": "offhand",
+"icon": "450006.png"
+},
+"450007": {
+"th": "ขวานรบ",
+"en": "Battle Hatchet",
+"type": "HATCHET",
+"slot": "offhand",
+"icon": "450007.png"
+},
+"450008": {
+"th": "ขวานปีก",
+"en": "Wing Hatchet",
+"type": "HATCHET",
+"slot": "offhand",
+"icon": "450008.png"
+},
+"450009": {
+"th": "ขวานชั้นยอด",
+"en": "Elite Hatchet",
+"type": "HATCHET",
+"slot": "offhand",
+"icon": "450009.png"
+},
+"450010": {
+"th": "ขวานใหญ่",
+"en": "Large Hatchet",
+"type": "HATCHET",
+"slot": "offhand",
+"icon": "450010.png"
+},
+"450011": {
+"th": "ขวานลึกลับ",
+"en": "Mystic Hatchet",
+"type": "HATCHET",
+"slot": "offhand",
+"icon": "450011.png"
+},
+"450012": {
+"th": "ขวานเร็ว",
+"en": "Swift Hatchet",
+"type": "HATCHET",
+"slot": "offhand",
+"icon": "450012.png"
+},
+"450013": {
+"th": "ขวานโบราณ",
+"en": "Ancient Hatchet",
+"type": "HATCHET",
+"slot": "offhand",
+"icon": "450013.png"
+},
+"450014": {
+"th": "ขวานไร้ขีดจำกัด",
+"en": "Limitless Hatchet",
+"type": "HATCHET",
+"slot": "offhand",
+"icon": "450014.png"
+},
+"450015": {
+"th": "ขวานโกลาหล",
+"en": "Chaos Hatchet",
+"type": "HATCHET",
+"slot": "offhand",
+"icon": "450015.png"
+},
+"450016": {
+"th": "ขวานพลัง",
+"en": "Power Hatchet",
+"type": "HATCHET",
+"slot": "offhand",
+"icon": "450016.png"
+},
+"450017": {
+"th": "ขวานมิติ",
+"en": "Dimensional Hatchet",
+"type": "HATCHET",
+"slot": "offhand",
+"icon": "450017.png"
+},
+"450018": {
+"th": "ขวานเงา",
+"en": "Shadow Hatchet",
+"type": "HATCHET",
+"slot": "offhand",
+"icon": "450018.png"
+},
+"450019": {
+"th": "ขวานนิรันดร์",
+"en": "Eternal Hatchet",
+"type": "HATCHET",
+"slot": "offhand",
+"icon": "450019.png"
+},
+"450020": {
+"th": "ขวานสูงส่ง",
+"en": "Exalted Hatchet",
+"type": "HATCHET",
+"slot": "offhand",
+"icon": "450020.png"
+},
+"500001": {
+"th": "หมวกเกราะไม้",
+"en": "Wooden Helmet",
+"type": "HELMET",
+"slot": "armor",
+"icon": "500001.png"
+},
+"500002": {
+"th": "หมวกเกราะจักรวรรดิ",
+"en": "Empire Helmet",
+"type": "HELMET",
+"slot": "armor",
+"icon": "500002.png"
+},
+"500003": {
+"th": "หมวกเกราะเหล็ก",
+"en": "Iron Helmet",
+"type": "HELMET",
+"slot": "armor",
+"icon": "500003.png"
+},
+"500004": {
+"th": "หมวกเกราะอัศวิน",
+"en": "Knight Helmet",
+"type": "HELMET",
+"slot": "armor",
+"icon": "500004.png"
+},
+"500005": {
+"th": "หมวกเกราะโซ่",
+"en": "Chain Helmet",
+"type": "HELMET",
+"slot": "armor",
+"icon": "500005.png"
+},
+"500006": {
+"th": "หมวกเกราะกลาง",
+"en": "Medium Helmet",
+"type": "HELMET",
+"slot": "armor",
+"icon": "500006.png"
+},
+"500007": {
+"th": "หมวกเกราะสงคราม",
+"en": "War Helmet",
+"type": "HELMET",
+"slot": "armor",
+"icon": "500007.png"
+},
+"500008": {
+"th": "หมวกเกราะจักรพรรดิ",
+"en": "Emperor Helmet",
+"type": "HELMET",
+"slot": "armor",
+"icon": "500008.png"
+},
+"500009": {
+"th": "หมวกเกราะรูน",
+"en": "Rune Helmet",
+"type": "HELMET",
+"slot": "armor",
+"icon": "500009.png"
+},
+"500010": {
+"th": "หมวกเกราะแดง",
+"en": "Red Helmet",
+"type": "HELMET",
+"slot": "armor",
+"icon": "500010.png"
+},
+"500011": {
+"th": "หมวกเกราะโชคชะตา",
+"en": "Fate Helmet",
+"type": "HELMET",
+"slot": "armor",
+"icon": "500011.png"
+},
+"500012": {
+"th": "หมวกเกราะใหญ่",
+"en": "Great Helmet",
+"type": "HELMET",
+"slot": "armor",
+"icon": "500012.png"
+},
+"500013": {
+"th": "หมวกเกราะพายุ",
+"en": "Storm Helmet",
+"type": "HELMET",
+"slot": "armor",
+"icon": "500013.png"
+},
+"500014": {
+"th": "หมวกเกราะนักสู้",
+"en": "Fighter's Helmet",
+"type": "HELMET",
+"slot": "armor",
+"icon": "500014.png"
+},
+"500015": {
+"th": "หมวกเกราะความว่างเปล่า",
+"en": "Void Helmet",
+"type": "HELMET",
+"slot": "armor",
+"icon": "500015.png"
+},
+"500016": {
+"th": "หมวกเกราะคริสตัล",
+"en": "Crystal Helmet",
+"type": "HELMET",
+"slot": "armor",
+"icon": "500016.png"
+},
+"500017": {
+"th": "หมวกเกราะมิติ",
+"en": "Dimensional Helmet",
+"type": "HELMET",
+"slot": "armor",
+"icon": "500017.png"
+},
+"500018": {
+"th": "หมวกเกราะเงา",
+"en": "Shadow Helmet",
+"type": "HELMET",
+"slot": "armor",
+"icon": "500018.png"
+},
+"500019": {
+"th": "หมวกเกราะนิรันดร์",
+"en": "Eternal Helmet",
+"type": "HELMET",
+"slot": "armor",
+"icon": "500019.png"
+},
+"500020": {
+"th": "หมวกเกราะรัศมี",
+"en": "Radiant Helmet",
+"type": "HELMET",
+"slot": "armor",
+"icon": "500020.png"
+},
+"510001": {
+"th": "เกราะไม้",
+"en": "Wooden Armor",
+"type": "ARMOR",
+"slot": "armor",
+"icon": "510001.png"
+},
+"510002": {
+"th": "เกราะจักรวรรดิ",
+"en": "Empire Armor",
+"type": "ARMOR",
+"slot": "armor",
+"icon": "510002.png"
+},
+"510003": {
+"th": "เกราะเหล็ก",
+"en": "Iron Plate",
+"type": "ARMOR",
+"slot": "armor",
+"icon": "510003.png"
+},
+"510004": {
+"th": "เกราะโซ่",
+"en": "Chain Mail",
+"type": "ARMOR",
+"slot": "armor",
+"icon": "510004.png"
+},
+"510005": {
+"th": "เกราะอัศวิน",
+"en": "Knight's Armor",
+"type": "ARMOR",
+"slot": "armor",
+"icon": "510005.png"
+},
+"510006": {
+"th": "เกราะโชคชะตา",
+"en": "Fate Armor",
+"type": "ARMOR",
+"slot": "armor",
+"icon": "510006.png"
+},
+"510007": {
+"th": "เกราะสงคราม",
+"en": "War Armor",
+"type": "ARMOR",
+"slot": "armor",
+"icon": "510007.png"
+},
+"510008": {
+"th": "เกราะหนัก",
+"en": "Heavy Armor",
+"type": "ARMOR",
+"slot": "armor",
+"icon": "510008.png"
+},
+"510009": {
+"th": "เกราะรูน",
+"en": "Rune Plate",
+"type": "ARMOR",
+"slot": "armor",
+"icon": "510009.png"
+},
+"510010": {
+"th": "เกราะเกล็ดมังกร",
+"en": "Dragon Scale Armor",
+"type": "ARMOR",
+"slot": "armor",
+"icon": "510010.png"
+},
+"510011": {
+"th": "เกราะลึกลับ",
+"en": "Mystic Armor",
+"type": "ARMOR",
+"slot": "armor",
+"icon": "510011.png"
+},
+"510012": {
+"th": "เกราะใหญ่",
+"en": "Great Armor",
+"type": "ARMOR",
+"slot": "armor",
+"icon": "510012.png"
+},
+"510013": {
+"th": "เกราะโบราณ",
+"en": "Ancient Armor",
+"type": "ARMOR",
+"slot": "armor",
+"icon": "510013.png"
+},
+"510014": {
+"th": "เกราะเจิดจ้า",
+"en": "Shine Armor",
+"type": "ARMOR",
+"slot": "armor",
+"icon": "510014.png"
+},
+"510015": {
+"th": "เกราะความว่างเปล่า",
+"en": "Void Armor",
+"type": "ARMOR",
+"slot": "armor",
+"icon": "510015.png"
+},
+"510016": {
+"th": "เกราะมังกร",
+"en": "Dragon Armor",
+"type": "ARMOR",
+"slot": "armor",
+"icon": "510016.png"
+},
+"510017": {
+"th": "เกราะมิติ",
+"en": "Dimensional Armor",
+"type": "ARMOR",
+"slot": "armor",
+"icon": "510017.png"
+},
+"510018": {
+"th": "เกราะเงา",
+"en": "Shadow Armor",
+"type": "ARMOR",
+"slot": "armor",
+"icon": "510018.png"
+},
+"510019": {
+"th": "เกราะนิรันดร์",
+"en": "Eternal Armor",
+"type": "ARMOR",
+"slot": "armor",
+"icon": "510019.png"
+},
+"510020": {
+"th": "เกราะรัศมี",
+"en": "Radiant Armor",
+"type": "ARMOR",
+"slot": "armor",
+"icon": "510020.png"
+},
+"520001": {
+"th": "ถุงมือหนัง",
+"en": "Leather Gloves",
+"type": "GLOVES",
+"slot": "armor",
+"icon": "520001.png"
+},
+"520002": {
+"th": "ถุงมือจักรวรรดิ",
+"en": "Empire Gloves",
+"type": "GLOVES",
+"slot": "armor",
+"icon": "520002.png"
+},
+"520003": {
+"th": "ถุงมือเหล็ก",
+"en": "Iron Gloves",
+"type": "GLOVES",
+"slot": "armor",
+"icon": "520003.png"
+},
+"520004": {
+"th": "ถุงมืออัศวิน",
+"en": "Knight Gloves",
+"type": "GLOVES",
+"slot": "armor",
+"icon": "520004.png"
+},
+"520005": {
+"th": "ถุงมือโซ่",
+"en": "Chain Gloves",
+"type": "GLOVES",
+"slot": "armor",
+"icon": "520005.png"
+},
+"520006": {
+"th": "ถุงมือโชคชะตา",
+"en": "Fate Gloves",
+"type": "GLOVES",
+"slot": "armor",
+"icon": "520006.png"
+},
+"520007": {
+"th": "ถุงมือสงคราม",
+"en": "War Gloves",
+"type": "GLOVES",
+"slot": "armor",
+"icon": "520007.png"
+},
+"520008": {
+"th": "ถุงมือหนัก",
+"en": "Heavy Gloves",
+"type": "GLOVES",
+"slot": "armor",
+"icon": "520008.png"
+},
+"520009": {
+"th": "ถุงมือรูน",
+"en": "Rune Gloves",
+"type": "GLOVES",
+"slot": "armor",
+"icon": "520009.png"
+},
+"520010": {
+"th": "ถุงมือเกราะ",
+"en": "Plate Gloves",
+"type": "GLOVES",
+"slot": "armor",
+"icon": "520010.png"
+},
+"520011": {
+"th": "ถุงมือลึกลับ",
+"en": "Mystic Gloves",
+"type": "GLOVES",
+"slot": "armor",
+"icon": "520011.png"
+},
+"520012": {
+"th": "ถุงมือใหญ่",
+"en": "Great Gloves",
+"type": "GLOVES",
+"slot": "armor",
+"icon": "520012.png"
+},
+"520013": {
+"th": "ถุงมือโบราณ",
+"en": "Ancient Gloves",
+"type": "GLOVES",
+"slot": "armor",
+"icon": "520013.png"
+},
+"520014": {
+"th": "ถุงมือเจิดจ้า",
+"en": "Shine Gloves",
+"type": "GLOVES",
+"slot": "armor",
+"icon": "520014.png"
+},
+"520015": {
+"th": "ถุงมือความว่างเปล่า",
+"en": "Void Gloves",
+"type": "GLOVES",
+"slot": "armor",
+"icon": "520015.png"
+},
+"520016": {
+"th": "ถุงมือมังกร",
+"en": "Dragon Gloves",
+"type": "GLOVES",
+"slot": "armor",
+"icon": "520016.png"
+},
+"520017": {
+"th": "ถุงมือมิติ",
+"en": "Dimensional Gloves",
+"type": "GLOVES",
+"slot": "armor",
+"icon": "520017.png"
+},
+"520018": {
+"th": "ถุงมือเงา",
+"en": "Shadow Gloves",
+"type": "GLOVES",
+"slot": "armor",
+"icon": "520018.png"
+},
+"520019": {
+"th": "ถุงมือนิรันดร์",
+"en": "Eternal Gloves",
+"type": "GLOVES",
+"slot": "armor",
+"icon": "520019.png"
+},
+"520020": {
+"th": "ถุงมือรัศมี",
+"en": "Radiant Gloves",
+"type": "GLOVES",
+"slot": "armor",
+"icon": "520020.png"
+},
+"530001": {
+"th": "รองเท้าไม้",
+"en": "Wooden Boots",
+"type": "BOOTS",
+"slot": "armor",
+"icon": "530001.png"
+},
+"530002": {
+"th": "รองเท้าจักรวรรดิ",
+"en": "Empire Boots",
+"type": "BOOTS",
+"slot": "armor",
+"icon": "530002.png"
+},
+"530003": {
+"th": "รองเท้าเหล็ก",
+"en": "Iron Boots",
+"type": "BOOTS",
+"slot": "armor",
+"icon": "530003.png"
+},
+"530004": {
+"th": "รองเท้าอัศวิน",
+"en": "Knight Boots",
+"type": "BOOTS",
+"slot": "armor",
+"icon": "530004.png"
+},
+"530005": {
+"th": "รองเท้าโซ่",
+"en": "Chain Boots",
+"type": "BOOTS",
+"slot": "armor",
+"icon": "530005.png"
+},
+"530006": {
+"th": "รองเท้าโชคชะตา",
+"en": "Fate Boots",
+"type": "BOOTS",
+"slot": "armor",
+"icon": "530006.png"
+},
+"530007": {
+"th": "รองเท้าสงคราม",
+"en": "War Boots",
+"type": "BOOTS",
+"slot": "armor",
+"icon": "530007.png"
+},
+"530008": {
+"th": "รองเท้าหนัก",
+"en": "Heavy Boots",
+"type": "BOOTS",
+"slot": "armor",
+"icon": "530008.png"
+},
+"530009": {
+"th": "รองเท้ารูน",
+"en": "Rune Boots",
+"type": "BOOTS",
+"slot": "armor",
+"icon": "530009.png"
+},
+"530010": {
+"th": "รองเท้าเกราะ",
+"en": "Plate Boots",
+"type": "BOOTS",
+"slot": "armor",
+"icon": "530010.png"
+},
+"530011": {
+"th": "รองเท้าลึกลับ",
+"en": "Mystic Boots",
+"type": "BOOTS",
+"slot": "armor",
+"icon": "530011.png"
+},
+"530012": {
+"th": "รองเท้าใหญ่",
+"en": "Great Boots",
+"type": "BOOTS",
+"slot": "armor",
+"icon": "530012.png"
+},
+"530013": {
+"th": "รองเท้าโบราณ",
+"en": "Ancient Boots",
+"type": "BOOTS",
+"slot": "armor",
+"icon": "530013.png"
+},
+"530014": {
+"th": "รองเท้าเจิดจ้า",
+"en": "Shine Boots",
+"type": "BOOTS",
+"slot": "armor",
+"icon": "530014.png"
+},
+"530015": {
+"th": "รองเท้าความว่างเปล่า",
+"en": "Void Boots",
+"type": "BOOTS",
+"slot": "armor",
+"icon": "530015.png"
+},
+"530016": {
+"th": "รองเท้าคริสตัล",
+"en": "Crystal Boots",
+"type": "BOOTS",
+"slot": "armor",
+"icon": "530016.png"
+},
+"530017": {
+"th": "รองเท้ามิติ",
+"en": "Dimensional Boots",
+"type": "BOOTS",
+"slot": "armor",
+"icon": "530017.png"
+},
+"530018": {
+"th": "รองเท้าเงา",
+"en": "Shadow Boots",
+"type": "BOOTS",
+"slot": "armor",
+"icon": "530018.png"
+},
+"530019": {
+"th": "รองเท้านิรันดร์",
+"en": "Eternal Boots",
+"type": "BOOTS",
+"slot": "armor",
+"icon": "530019.png"
+},
+"530020": {
+"th": "รองเท้ารัศมี",
+"en": "Radiant Boots",
+"type": "BOOTS",
+"slot": "armor",
+"icon": "530020.png"
+},
+"600001": {
+"th": "สร้อยคอทองแดง",
+"en": "Copper Amulet",
+"type": "AMULET",
+"slot": "accessory",
+"icon": "600001.png"
+},
+"600002": {
+"th": "สร้อยคอทองสัมฤทธิ์",
+"en": "Bronze Amulet",
+"type": "AMULET",
+"slot": "accessory",
+"icon": "600002.png"
+},
+"600003": {
+"th": "สร้อยคอเงิน",
+"en": "Silver Amulet",
+"type": "AMULET",
+"slot": "accessory",
+"icon": "600003.png"
+},
+"600004": {
+"th": "สร้อยคอทอง",
+"en": "Gold Amulet",
+"type": "AMULET",
+"slot": "accessory",
+"icon": "600004.png"
+},
+"600005": {
+"th": "สร้อยคอแพลตินัม",
+"en": "Platinum Amulet",
+"type": "AMULET",
+"slot": "accessory",
+"icon": "600005.png"
+},
+"600006": {
+"th": "สร้อยคอคริสตัล",
+"en": "Crystal Amulet",
+"type": "AMULET",
+"slot": "accessory",
+"icon": "600006.png"
+},
+"600007": {
+"th": "จี้หินจันทร์",
+"en": "Moonstone Pendant",
+"type": "AMULET",
+"slot": "accessory",
+"icon": "600007.png"
+},
+"600008": {
+"th": "จี้อำพัน",
+"en": "Amber Pendant",
+"type": "AMULET",
+"slot": "accessory",
+"icon": "600008.png"
+},
+"600009": {
+"th": "จี้ทับทิม",
+"en": "Ruby Pendant",
+"type": "AMULET",
+"slot": "accessory",
+"icon": "600009.png"
+},
+"600010": {
+"th": "จี้อเมทิสต์",
+"en": "Amethyst Pendant",
+"type": "AMULET",
+"slot": "accessory",
+"icon": "600010.png"
+},
+"600011": {
+"th": "สร้อยคอมรกต",
+"en": "Emerald Amulet",
+"type": "AMULET",
+"slot": "accessory",
+"icon": "600011.png"
+},
+"600012": {
+"th": "สร้อยคอเพชร",
+"en": "Diamond Amulet",
+"type": "AMULET",
+"slot": "accessory",
+"icon": "600012.png"
+},
+"600013": {
+"th": "สร้อยคอฝุ่นดาว",
+"en": "Stardust Amulet",
+"type": "AMULET",
+"slot": "accessory",
+"icon": "600013.png"
+},
+"600014": {
+"th": "สร้อยคอสุริยุปราคา",
+"en": "Eclipse Amulet",
+"type": "AMULET",
+"slot": "accessory",
+"icon": "600014.png"
+},
+"600015": {
+"th": "สร้อยคอเทพ",
+"en": "Celestial Amulet",
+"type": "AMULET",
+"slot": "accessory",
+"icon": "600015.png"
+},
+"600016": {
+"th": "สร้อยคอดวงดาว",
+"en": "Astral Amulet",
+"type": "AMULET",
+"slot": "accessory",
+"icon": "600016.png"
+},
+"600017": {
+"th": "สร้อยคอวิญญาณ",
+"en": "Ethereal Amulet",
+"type": "AMULET",
+"slot": "accessory",
+"icon": "600017.png"
+},
+"600018": {
+"th": "สร้อยคอความว่างเปล่า",
+"en": "Void Amulet",
+"type": "AMULET",
+"slot": "accessory",
+"icon": "600018.png"
+},
+"600019": {
+"th": "สร้อยคอเหวลึก",
+"en": "Abyss Amulet",
+"type": "AMULET",
+"slot": "accessory",
+"icon": "600019.png"
+},
+"610001": {
+"th": "ต่างหูทองแดง",
+"en": "Copper Earring",
+"type": "EARING",
+"slot": "accessory",
+"icon": "610001.png"
+},
+"610002": {
+"th": "ต่างหูทองสัมฤทธิ์",
+"en": "Bronze Earring",
+"type": "EARING",
+"slot": "accessory",
+"icon": "610002.png"
+},
+"610003": {
+"th": "ต่างหูเงิน",
+"en": "Silver Earring",
+"type": "EARING",
+"slot": "accessory",
+"icon": "610003.png"
+},
+"610004": {
+"th": "ต่างหูทอง",
+"en": "Gold Earring",
+"type": "EARING",
+"slot": "accessory",
+"icon": "610004.png"
+},
+"610005": {
+"th": "ต่างหูแพลตินัม",
+"en": "Platinum Earring",
+"type": "EARING",
+"slot": "accessory",
+"icon": "610005.png"
+},
+"610006": {
+"th": "ต่างหูคริสตัล",
+"en": "Crystal Earring",
+"type": "EARING",
+"slot": "accessory",
+"icon": "610006.png"
+},
+"610007": {
+"th": "ต่างหูมรกต",
+"en": "Emerald Earring",
+"type": "EARING",
+"slot": "accessory",
+"icon": "610007.png"
+},
+"610008": {
+"th": "ต่างหูหยก",
+"en": "Jade Earring",
+"type": "EARING",
+"slot": "accessory",
+"icon": "610008.png"
+},
+"610009": {
+"th": "ต่างหูตาเสือ",
+"en": "Tiger Eye Earring",
+"type": "EARING",
+"slot": "accessory",
+"icon": "610009.png"
+},
+"610010": {
+"th": "ต่างหูโกเมน",
+"en": "Garnet Earring",
+"type": "EARING",
+"slot": "accessory",
+"icon": "610010.png"
+},
+"610011": {
+"th": "ต่างหูไพลิน",
+"en": "Sapphire Earring",
+"type": "EARING",
+"slot": "accessory",
+"icon": "610011.png"
+},
+"610012": {
+"th": "ต่างหูเพชร",
+"en": "Diamond Earring",
+"type": "EARING",
+"slot": "accessory",
+"icon": "610012.png"
+},
+"610013": {
+"th": "ต่างหูหินจันทร์",
+"en": "Moonstone Earring",
+"type": "EARING",
+"slot": "accessory",
+"icon": "610013.png"
+},
+"610014": {
+"th": "ต่างหูเทพ",
+"en": "Celestial Earring",
+"type": "EARING",
+"slot": "accessory",
+"icon": "610014.png"
+},
+"610015": {
+"th": "ต่างหูสุริยุปราคา",
+"en": "Eclipse Earring",
+"type": "EARING",
+"slot": "accessory",
+"icon": "610015.png"
+},
+"610016": {
+"th": "ต่างหูดวงดาว",
+"en": "Astral Earring",
+"type": "EARING",
+"slot": "accessory",
+"icon": "610016.png"
+},
+"610017": {
+"th": "ต่างหูวิญญาณ",
+"en": "Ethereal Earring",
+"type": "EARING",
+"slot": "accessory",
+"icon": "610017.png"
+},
+"610018": {
+"th": "ต่างหูความว่างเปล่า",
+"en": "Void Earring",
+"type": "EARING",
+"slot": "accessory",
+"icon": "610018.png"
+},
+"610019": {
+"th": "ต่างหูเหวลึก",
+"en": "Abyss Earring",
+"type": "EARING",
+"slot": "accessory",
+"icon": "610019.png"
+},
+"620001": {
+"th": "แหวนทองแดง",
+"en": "Copper Ring",
+"type": "RING",
+"slot": "accessory",
+"icon": "620001.png"
+},
+"620002": {
+"th": "แหวนทองสัมฤทธิ์",
+"en": "Bronze Ring",
+"type": "RING",
+"slot": "accessory",
+"icon": "620002.png"
+},
+"620003": {
+"th": "แหวนเงิน",
+"en": "Silver Ring",
+"type": "RING",
+"slot": "accessory",
+"icon": "620003.png"
+},
+"620004": {
+"th": "แหวนทอง",
+"en": "Gold Ring",
+"type": "RING",
+"slot": "accessory",
+"icon": "620004.png"
+},
+"620005": {
+"th": "แหวนแพลตินัม",
+"en": "Platinum Ring",
+"type": "RING",
+"slot": "accessory",
+"icon": "620005.png"
+},
+"620006": {
+"th": "แหวนคริสตัล",
+"en": "Crystal Ring",
+"type": "RING",
+"slot": "accessory",
+"icon": "620006.png"
+},
+"620007": {
+"th": "แหวนอำพัน",
+"en": "Amber Ring",
+"type": "RING",
+"slot": "accessory",
+"icon": "620007.png"
+},
+"620008": {
+"th": "แหวนโทแพซ",
+"en": "Topaz Ring",
+"type": "RING",
+"slot": "accessory",
+"icon": "620008.png"
+},
+"620009": {
+"th": "แหวนอเมทิสต์",
+"en": "Amethyst Ring",
+"type": "RING",
+"slot": "accessory",
+"icon": "620009.png"
+},
+"620010": {
+"th": "แหวนโกเมน",
+"en": "Garnet Ring",
+"type": "RING",
+"slot": "accessory",
+"icon": "620010.png"
+},
+"620011": {
+"th": "แหวนมรกต",
+"en": "Emerald Ring",
+"type": "RING",
+"slot": "accessory",
+"icon": "620011.png"
+},
+"620012": {
+"th": "แหวนเพชร",
+"en": "Diamond Ring",
+"type": "RING",
+"slot": "accessory",
+"icon": "620012.png"
+},
+"620013": {
+"th": "แหวนหินจันทร์",
+"en": "Moonstone Ring",
+"type": "RING",
+"slot": "accessory",
+"icon": "620013.png"
+},
+"620014": {
+"th": "แหวนสุริยุปราคา",
+"en": "Eclipse Ring",
+"type": "RING",
+"slot": "accessory",
+"icon": "620014.png"
+},
+"620015": {
+"th": "แหวนเทพ",
+"en": "Celestial Ring",
+"type": "RING",
+"slot": "accessory",
+"icon": "620015.png"
+},
+"620016": {
+"th": "แหวนดวงดาว",
+"en": "Astral Ring",
+"type": "RING",
+"slot": "accessory",
+"icon": "620016.png"
+},
+"620017": {
+"th": "แหวนวิญญาณ",
+"en": "Ethereal Ring",
+"type": "RING",
+"slot": "accessory",
+"icon": "620017.png"
+},
+"620018": {
+"th": "แหวนความว่างเปล่า",
+"en": "Void Ring",
+"type": "RING",
+"slot": "accessory",
+"icon": "620018.png"
+},
+"620019": {
+"th": "แหวนเหวลึก",
+"en": "Abyss Ring",
+"type": "RING",
+"slot": "accessory",
+"icon": "620019.png"
+},
+"630001": {
+"th": "กำไลทองแดง",
+"en": "Copper Bracer",
+"type": "BRACER",
+"slot": "accessory",
+"icon": "630001.png"
+},
+"630002": {
+"th": "กำไลทองสัมฤทธิ์",
+"en": "Bronze Bracer",
+"type": "BRACER",
+"slot": "accessory",
+"icon": "630002.png"
+},
+"630003": {
+"th": "กำไลเงิน",
+"en": "Silver Bracer",
+"type": "BRACER",
+"slot": "accessory",
+"icon": "630003.png"
+},
+"630004": {
+"th": "กำไลทอง",
+"en": "Gold Bracer",
+"type": "BRACER",
+"slot": "accessory",
+"icon": "630004.png"
+},
+"630005": {
+"th": "กำไลแพลตินัม",
+"en": "Platinum Bracer",
+"type": "BRACER",
+"slot": "accessory",
+"icon": "630005.png"
+},
+"630006": {
+"th": "กำไลคริสตัล",
+"en": "Crystal Bracer",
+"type": "BRACER",
+"slot": "accessory",
+"icon": "630006.png"
+},
+"630007": {
+"th": "กำไลออบซิเดียน",
+"en": "Obsidian Bracer",
+"type": "BRACER",
+"slot": "accessory",
+"icon": "630007.png"
+},
+"630008": {
+"th": "กำไลเงา",
+"en": "Shadow Bracer",
+"type": "BRACER",
+"slot": "accessory",
+"icon": "630008.png"
+},
+"630009": {
+"th": "กำไลสีเลือด",
+"en": "Crimson Bracer",
+"type": "BRACER",
+"slot": "accessory",
+"icon": "630009.png"
+},
+"630010": {
+"th": "กำไลหินเลือด",
+"en": "Bloodstone Bracer",
+"type": "BRACER",
+"slot": "accessory",
+"icon": "630010.png"
+},
+"630011": {
+"th": "กำไลมรกต",
+"en": "Emerald Bracer",
+"type": "BRACER",
+"slot": "accessory",
+"icon": "630011.png"
+},
+"630012": {
+"th": "กำไลเพชร",
+"en": "Diamond Bracer",
+"type": "BRACER",
+"slot": "accessory",
+"icon": "630012.png"
+},
+"630013": {
+"th": "กำไลฝุ่นดาว",
+"en": "Stardust Bracer",
+"type": "BRACER",
+"slot": "accessory",
+"icon": "630013.png"
+},
+"630014": {
+"th": "กำไลสุริยุปราคา",
+"en": "Eclipse Bracer",
+"type": "BRACER",
+"slot": "accessory",
+"icon": "630014.png"
+},
+"630015": {
+"th": "กำไลเทพ",
+"en": "Celestial Bracer",
+"type": "BRACER",
+"slot": "accessory",
+"icon": "630015.png"
+},
+"630016": {
+"th": "กำไลดวงดาว",
+"en": "Astral Bracer",
+"type": "BRACER",
+"slot": "accessory",
+"icon": "630016.png"
+},
+"630017": {
+"th": "กำไลวิญญาณ",
+"en": "Ethereal Bracer",
+"type": "BRACER",
+"slot": "accessory",
+"icon": "630017.png"
+},
+"630018": {
+"th": "กำไลความว่างเปล่า",
+"en": "Void Bracer",
+"type": "BRACER",
+"slot": "accessory",
+"icon": "630018.png"
+},
+"630019": {
+"th": "กำไลเหวลึก",
+"en": "Abyss Bracer",
+"type": "BRACER",
+"slot": "accessory",
+"icon": "630019.png"
+},
+"910011": {
+"th": null,
+"en": null,
+"type": "Item",
+"slot": "special",
+"icon": "910011.png"
+},
+"920011": {
+"th": null,
+"en": null,
+"type": "Item",
+"slot": "special",
+"icon": "920011.png"
+},
+"930011": {
+"th": null,
+"en": null,
+"type": "Item",
+"slot": "special",
+"icon": "930011.png"
+}
+}

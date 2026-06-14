@@ -1,0 +1,70 @@
+import { Lock, Sparkles } from "lucide-react";
+import type { InventoryItem } from "@/lib/types/save";
+import {
+  itemGrade,
+  gradeStyle,
+  itemIconUrl,
+  itemDisplayName,
+  enchantTotal,
+} from "@/lib/game/items";
+import { cn } from "@/lib/utils";
+
+export function ItemCell({
+  item,
+  onClick,
+}: {
+  item: InventoryItem;
+  onClick?: () => void;
+}) {
+  const grade = itemGrade(item.itemKey);
+  const { color, borderColor } = gradeStyle(grade);
+  const enchants = enchantTotal(item);
+  const name = itemDisplayName(item.itemKey);
+  const icon = itemIconUrl(item.itemKey);
+
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      title={name}
+      style={{ borderColor }}
+      className={cn(
+        "group relative flex aspect-square flex-col items-center justify-center gap-0.5 rounded-lg border bg-secondary/30 p-1 transition-colors hover:bg-secondary/70",
+        item.isChaotic && "ring-1 ring-rarity-chaotic/60",
+      )}
+    >
+      {icon ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={icon}
+          alt={name}
+          className="h-7 w-7 shrink-0 object-contain"
+          style={{ imageRendering: "pixelated" }}
+          draggable={false}
+        />
+      ) : (
+        <span
+          className="flex h-7 w-7 shrink-0 items-center justify-center text-[15px] font-bold"
+          style={{ color }}
+        >
+          {name.charAt(0)}
+        </span>
+      )}
+      <span
+        className="w-full truncate text-center text-[9px] font-medium leading-tight"
+        style={{ color }}
+      >
+        {name}
+      </span>
+      {enchants > 0 ? (
+        <span className="absolute left-0.5 top-0.5 inline-flex items-center gap-0.5 rounded bg-background/80 px-1 text-[9px] text-muted-foreground">
+          <Sparkles className="h-2.5 w-2.5" />
+          {enchants}
+        </span>
+      ) : null}
+      {item.isBlocked ? (
+        <Lock className="absolute right-1 top-1 h-3 w-3 text-muted-foreground" />
+      ) : null}
+    </button>
+  );
+}

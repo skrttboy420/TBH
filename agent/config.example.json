@@ -1,0 +1,13 @@
+{
+  "apiBaseUrl": "https://your-app.vercel.app",
+  "agentToken": "tbh_paste-your-agent-token-here",
+  "savePath": "",
+  "windowTitle": "Taskbar Hero",
+  "pollIntervalSeconds": 15,
+  "heartbeatIntervalSeconds": 30,
+  "screenshotOnStatus": false,
+  "controls": {
+    "startFarmHotkey": "f6",
+    "stopFarmHotkey": "f7"
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "10001": {
+    "th": null,
+    "en": null,
+    "descTh": null,
+    "descEn": null,
+    "basic": true
+  },
+  "10101": {
+    "th": "แทงทะลุ",
+    "en": "Piercing Thrust",
+    "descTh": "พุ่งดาบไปข้างหน้าอย่างลึก สร้างความเสียหายกายภาพ {0}% ให้ศัตรูในระยะ",
+    "descEn": "Thrust your sword deeply forward, dealing {0}% physical damage to enemies in range.",
+    "basic": false
+  },
+  "10201": {
+    "th": "พุ่งชนด้วยโล่",
+    "en": "Shield Charge",
+    "descTh": "ยกโล่และพุ่งไปข้างหน้า สร้างความเสียหายกายภาพ {0}% ให้ศัตรูที่ชน",
+    "descEn": "Raise your shield and charge forward. Deal {0}% physical damage to enemies you collide with.",
+    "basic": false
+  },
+  "10301": {
+    "th": "การลงทัณฑ์",
+    "en": "Retribution Strike",
+    "descTh": "โจมตีศัตรูหลายครั้ง สร้างความเสียหายกายภาพ {0}% ต่อการโจมตี ยิ่ง HP ฮีโร่ต่ำ ยิ่งโจมตีหลายครั้ง",
+    "descEn": "Strike enemies multiple times, dealing {0}% physical damage per hit. The lower the hero's HP, the more strikes.",
+    "basic": false
+  },
+  "10401": {
+    "th": "สนามอีจิส",
+    "en": "Aegis Field",
+    "descTh": "กาง aura ป้องกันที่บล็อกความเสียหาย {0} ให้พันธมิตรในพื้นที่",
+    "descEn": "Deploy a protective aura that blocks {0} damage for allies within the area.",
+    "basic": false
+  },
+  "10501": {
+    "th": "ดาบศักดิ์สิทธิ์",
+    "en": "Sacred Blade",
+    "descTh": "เสริมพลังศักดิ์สิทธิ์ให้ดาบ ระหว่างที่บัฟอยู่ ความเสียหายโจมตีเพิ่ม 50% และการโจมตีฟื้นฟู HP {0}",
+    "descEn": "Imbue your sword with holy power. While buffed, attack damage increases by 50% and attacks restore {0} HP.",
+    "basic": false
+  },
+  "10601": {
+    "th": "เจตจำนงไม่สั่นคลอน",
+    "en": "Unyielding Will",
+    "descTh": "หนึ่งครั้งต่อด่าน เมื่อใกล้ตาย รวบรวมจิตใจลุกขึ้นมาด้วย HP {0}%",
+    "descEn": "Once per stage, when near-death, focus your mind to rise again with {0}% HP.",
+    "basic": false
+  },
+  "20001": {
+    "th": null,
+    "en": null,
+    "descTh": null,
+    "descEn": null,
+    "basic": true
+  },
+  "20101": {
+    "th": "ยิงเร็ว",
+    "en": "Rapid Fire",
+    "descTh": "ยิงธนูหลายลูกติดต่อกัน สร้างความเสียหายกายภาพ {0}% ต่อลูก",
+    "descEn": "Fire multiple arrows in succession, dealing {0}% physical damage per arrow.",
+    "basic": false
+  },
+  "20201": {
+    "th": "ยิงกระจาย",
+    "en": "Scatter Shot",
+    "descTh": "ยิงธนูตามเป้าหมายหลายลูก สร้างความเสียหายกายภาพ {0}% ต่อลูก",
+    "descEn": "Fire multiple homing arrows. Deal {0}% physical damage per arrow.",
+    "basic": false
+  },
+  "20301": {
+    "th": "ฝนธนู",
+    "en": "Arrow Rain",
+    "descTh": "ยิงธนูหลายลูกขึ้นฟ้า สร้างความเสียหายกายภาพ {0}% ให้ศัตรูในพื้นที่กว้าง",
+    "descEn": "Fire multiple arrows into the sky, dealing {0}% physical damage to enemies in a wide area.",
+    "basic": false
+  },
+  "20401": {
+    "th": "พลังความรวดเร็ว",
+    "en": "Swift Surge",
+    "descTh": "เร่งการเผาผลาญชั่วคราว ความเร็วการโจมตีเพิ่ม {0}% ตลอดระยะเวลา",
+    "descEn": "Temporarily accelerate your metabolism. Attack speed increases by {0}% for the duration.",
+    "basic": false
+  },
+  "20501": {
+    "th": "ลูกศรเจาะทะลุ",
+    "en": "Piercing Arrow",
+    "descTh": "ยิงธนูทะลุที่สร้างความเสียหายกายภาพ {0}% ให้ศัตรูที่โดน",
+    "descEn": "Fire a piercing arrow that deals {0}% physical damage to enemies hit.",
+    "basic": false
+  },
+  "20601": {
+    "th": "ยิงเสียบ",
+    "en": "Skewer Shot",
+    "descTh": "ยิงธนูที่ฝังลึก ความเสียหายเพิ่ม {0}% ต่อธนูที่ฝัง เมื่อฝัง 3 ลูกขึ้นไปจะทำให้บาดแผลใหญ่",
+    "descEn": "Fire a deep-wounding arrow. Damage increases by {0}% per lodged arrow; 3+ arrows cause bleeding.",
+    "basic": false
+  },
+  "30001": {
+    "th": null,
+    "en": null,
+    "descTh": null,
+    "descEn": null,
+    "basic": true
+  },
+  "30101": {
+    "th": "ลูกไฟ",
+    "en": "Fireball",
+    "descTh": "ลูกไฟที่ระเบิดเมื่อสัมผัส สร้างความเสียหายไฟแบบพื้นที่ {0}%",
+    "descEn": "A fireball that explodes on impact, dealing {0}% AoE fire damage.",
+    "basic": false
+  },
+  "30201": {
+    "th": "ลูกน้ำแข็ง",
+    "en": "Ice Orb",
+    "descTh": "เรียกลูกแก้วน้ำแข็งและขว้างใส่ศัตรู ทำให้ศัตรูช้าลงและสร้างความเสียหายเย็นหลายครั้ง {0}%",
+    "descEn": "Summon an ice orb and hurl it at enemies. Slows enemies hit and deals {0}% multi-hit cold damage.",
+    "basic": false
+  },
+  "30301": {
+    "th": "สายฟ้า",
+    "en": "Lightning",
+    "descTh": "ปลดปล่อยไฟฟ้าไปข้างหน้า สร้างความเสียหายฟ้าผ่า {0}% ให้ศัตรู",
+    "descEn": "Unleash electricity forward, dealing {0}% lightning damage to enemies.",
+    "basic": false
+  },
+  "30401": {
+    "th": "ไฮดราเพลิง",
+    "en": "Flame Hydra",
+    "descTh": "เรียกไฮดราที่ยิงลูกไฟสร้างความเสียหาย {0}%",
+    "descEn": "Summon a hydra that fires fireballs dealing {0}% damage.",
+    "basic": false
+  },
+  "30501": {
+    "th": "พายุหิมะ",
+    "en": "Snowstorm",
+    "descTh": "เรียกก้อนน้ำแข็งจำนวนมากตกใส่ศัตรู สร้างความเสียหายเย็น {0}% ต่อวินาทีให้ศัตรูในพื้นที่และทำให้ช้าลง",
+    "descEn": "Summon a mass of ice shards raining on enemies. Deals {0}% cold damage per second and chills enemies in the area.",
+    "basic": false
+  },
+  "30601": {
+    "th": "อุกกาบาต",
+    "en": "Meteor Strike",
+    "descTh": "เรียกอุกกาบาต สร้างความเสียหาย {0}% ให้ศัตรูในพื้นที่กว้าง",
+    "descEn": "Summon a meteor, dealing {0}% damage to enemies in a wide area.",
+    "basic": false
+  },
+  "40001": {
+    "th": null,
+    "en": null,
+    "descTh": null,
+    "descEn": null,
+    "basic": true
+  },
+  "40101": {
+    "th": "รักษา",
+    "en": "Heal",
+    "descTh": "ฟื้นฟู HP พันธมิตร 1 คน {0}% ของ HP สูงสุด.",
+    "descEn": "Restore one ally's HP by an amount equal to {0}% of their maximum HP.",
+    "basic": false
+  },
+  "40201": {
+    "th": "พรแห่งพลัง",
+    "en": "Blessing Of Might",
+    "descTh": "พรที่ทำงานเมื่อสวมใส่ เพิ่มความเสียหายโจมตีของตนเองและสมาชิกปาร์ตี้ใกล้เคียง {0}%",
+    "descEn": "A blessing active while equipped. Increases attack damage of self and nearby party members by {0}%.",
+    "basic": false
+  },
+  "40301": {
+    "th": "พิโรธแห่งสวรรค์",
+    "en": "Wrath of Heaven",
+    "descTh": "เสริมพลังฟ้าผ่าศักดิ์สิทธิ์ให้คทา ระหว่างระยะเวลา การโจมตีสร้างความเสียหายฟ้าผ่าแบบพื้นที่ {0}%",
+    "descEn": "Imbue your scepter with divine lightning. For the duration, attacks deal {0}% lightning area damage.",
+    "basic": false
+  },
+  "40401": {
+    "th": "สถานศักดิ์สิทธิ์",
+    "en": "Sanctuary",
+    "descTh": "กางอภัยภูมิศักดิ์สิทธิ์ทั่วสนามรบ ระหว่างระยะเวลา พันธมิตรทั้งหมดในพื้นที่ฟื้นฟู HP {0} ต่อวินาที",
+    "descEn": "Deploy a holy sanctuary across the battlefield. For the duration, all allies inside regenerate {0} HP per second.",
+    "basic": false
+  },
+  "40501": {
+    "th": "พรแห่งการปกป้อง",
+    "en": "Blessing of Warding",
+    "descTh": "พรที่ทำงานเมื่อสวมใส่ เพิ่มความต้านทานธาตุของตนเองและสมาชิกปาร์ตี้ใกล้เคียง {0}",
+    "descEn": "A blessing active while equipped. Increases elemental resistance of self and nearby party members by {0}.",
+    "basic": false
+  },
+  "40601": {
+    "th": "คืนชีพ",
+    "en": "Resurrection",
+    "descTh": "ชุบชีวิตสมาชิกปาร์ตี้ที่ล้มลง 1 คน ด้วย HP {0}% ของ HP สูงสุด",
+    "descEn": "Revive a fallen party member with {0}% of their max HP.",
+    "basic": false
+  },
+  "50001": {
+    "th": null,
+    "en": null,
+    "descTh": null,
+    "descEn": null,
+    "basic": true
+  },
+  "50101": {
+    "th": "สลักระเบิด",
+    "en": "Explosive Bolt",
+    "descTh": "ยิงลูกธนูหน้าไม้ที่ระเบิดเมื่อกระทบ สร้างความเสียหายไฟแบบพื้นที่ {0}%",
+    "descEn": "Fire a crossbow bolt that explodes on impact, dealing {0}% area fire damage.",
+    "basic": false
+  },
+  "50201": {
+    "th": "สลักน้ำแข็ง",
+    "en": "Frost Bolt",
+    "descTh": "ยิงลูกธนูหน้าไม้ที่ระเบิดเมื่อกระทบ สร้างความเสียหายเย็นแบบพื้นที่ {0}% และทำให้ศัตรูที่โดนแข็ง",
+    "descEn": "Fire a crossbow bolt that explodes on impact, dealing {0}% area cold damage and freezing enemies hit.",
+    "basic": false
+  },
+  "50301": {
+    "th": "บรรจุกระสุนเร็ว",
+    "en": "Quick Loader",
+    "descTh": "บรรจุลูกธนูหน้าไม้อย่างรวดเร็ว ความเร็วการโจมตีเพิ่ม 50% เป็น {0} ครั้ง",
+    "descEn": "Rapidly reload crossbow bolts. Attack speed increases by 50% for {0} attacks.",
+    "basic": false
+  },
+  "50401": {
+    "th": "กับดักชาร์จ",
+    "en": "Charge Trap",
+    "descTh": "ยิงกับดัก {0} ชิ้นที่ระเบิดเมื่อโดนความเสียหายธาตุ",
+    "descEn": "Launch {0} traps that explode when struck by elemental damage.",
+    "basic": false
+  },
+  "50501": {
+    "th": "ป้อมธนูหน้าไม้",
+    "en": "Crossbow Turret",
+    "descTh": "ติดตั้งหน้าไม้อัตโนมัติที่ยิงลูกธนูสร้างความเสียหายกายภาพ {0}%",
+    "descEn": "Deploy an automated crossbow that fires bolts dealing {0}% physical damage.",
+    "basic": false
+  },
+  "50601": {
+    "th": "สลักช็อก",
+    "en": "Shock Bolt",
+    "descTh": "ยิงลูกธนูหน้าไม้ที่ฝังในศัตรูและปล่อยกระแสไฟฟ้าชั่วระยะเวลา ลูกธนูจะปล่อยกระแสที่สร้างความเสียหายฟ้าผ่า {0}% ให้ศัตรูใกล้เคียง",
+    "descEn": "Fire a crossbow bolt that lodges in an enemy and emits lightning for a time. The bolt releases currents dealing {0}% lightning damage to nearby enemies.",
+    "basic": false
+  },
+  "60001": {
+    "th": null,
+    "en": null,
+    "descTh": null,
+    "descEn": null,
+    "basic": true
+  },
+  "60101": {
+    "th": "กระโดดทุบ",
+    "en": "Slam Jump",
+    "descTh": "กระโดดใส่ศัตรู เกิดคลื่นกระแทกเมื่อลงจอดสร้างความเสียหายกายภาพ {0}% ให้ศัตรูใกล้เคียง",
+    "descEn": "Gather strength and smash an enemy for {0}% physical damage. If it kills the enemy, a shockwave deals 350% damage to nearby enemies.",
+    "basic": false
+  },
+  "60201": {
+    "th": "ทุบบด",
+    "en": "Crushing Blow",
+    "descTh": "รวบรวมพลังและฟาดศัตรูสร้างความเสียหายกายภาพ {0}% หากสังหารศัตรู คลื่นกระแทกจะสร้างความเสียหาย 350% ให้ศัตรูใกล้เคียง",
+    "descEn": "Gather strength and smash an enemy for {0}% physical damage. If it kills the enemy, a shockwave deals 350% damage to nearby enemies.",
+    "basic": false
+  },
+  "60301": {
+    "th": "เสียงกองทัพ",
+    "en": "Commander’s Cry",
+    "descTh": "ตะโกนทำให้ศัตรูใกล้เคียงสตันและเพิ่มตัวคูณโอกาสคริติคอลของปาร์ตี้ {0}%",
+    "descEn": "Let out a cry that stuns nearby enemies and increases party critical chance multiplier by {0}%.",
+    "basic": false
+  },
+  "60401": {
+    "th": "ทุบพื้น",
+    "en": "Ground Slam",
+    "descTh": "ทุบพื้นอย่างแรงทำให้เกิดแผ่นดินไหวสร้างความเสียหายกายภาพ {0}% ให้ศัตรู หินที่เกิดจากแผ่นดินไหวจะระเบิดเมื่อโดนการโจมตีกายภาพแบบ AoE",
+    "descEn": "Smash the ground hard, causing an earthquake that deals {0}% physical damage to enemies. Rocks created by the earthquake explode when hit by AoE physical attacks.",
+    "basic": false
+  },
+  "60501": {
+    "th": "หมุนขวาน",
+    "en": "Axe Spin",
+    "descTh": "หมุนด้วยขวานสร้างความเสียหายกายภาพ {0}% ต่อวินาทีให้ศัตรูรอบข้างและมีโอกาสทำให้เลือดออก โจมตีศัตรูที่เลือดออกอยู่จะสร้างความเสียหายเพิ่ม",
+    "descEn": "Spin with an axe, dealing {0}% physical damage per second to nearby enemies and a chance to apply bleeding. Attacks against bleeding enemies deal bonus damage.",
+    "basic": false
+  },
+  "60601": {
+    "th": "กระหายเลือด",
+    "en": "Bloodlust",
+    "descTh": "ใช้ HP ปัจจุบันครึ่งหนึ่ง เพิ่มความเสียหายโจมตี {0}% ในระยะเวลาหนึ่ง",
+    "descEn": "Consume half of current HP to increase attack damage by {0}% for a time.",
+    "basic": false
+  }
+}
