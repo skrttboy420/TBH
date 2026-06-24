@@ -3,6 +3,7 @@ import type { InventoryItem } from "@/lib/types/save";
 import {
   itemGrade,
   gradeStyle,
+  gradeGlow,
   itemIconUrl,
   itemDisplayName,
   enchantTotal,
@@ -19,6 +20,7 @@ export function ItemCell({
 }) {
   const grade = itemGrade(item.itemKey);
   const { color, borderColor } = gradeStyle(grade);
+  const glow = gradeGlow(grade);
   const enchants = enchantTotal(item);
   const name = itemDisplayName(item.itemKey);
   const icon = itemIconUrl(item.itemKey);
@@ -41,13 +43,13 @@ export function ItemCell({
           src={icon}
           alt={name}
           className="h-7 w-7 shrink-0 object-contain"
-          style={{ imageRendering: "pixelated" }}
+          style={{ imageRendering: "pixelated", filter: glow }}
           draggable={false}
         />
       ) : (
         <span
           className="flex h-7 w-7 shrink-0 items-center justify-center text-[15px] font-bold"
-          style={{ color }}
+          style={{ color, textShadow: glow ? `0 0 6px ${color}` : undefined }}
         >
           {name.charAt(0)}
         </span>

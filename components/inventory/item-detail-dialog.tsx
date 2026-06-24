@@ -4,6 +4,7 @@ import {
   itemGrade,
   gradeInfo,
   gradeStyle,
+  gradeGlow,
   itemIconUrl,
   itemDisplayName,
   itemCatalogEntry,
@@ -48,7 +49,11 @@ export function ItemDetailDialog({
                 src={icon}
                 alt={name}
                 className="h-12 w-12 shrink-0 rounded-md border bg-secondary/40 p-1"
-                style={{ imageRendering: "pixelated", borderColor: gradeStyle(grade).borderColor }}
+                style={{
+                  imageRendering: "pixelated",
+                  borderColor: gradeStyle(grade).borderColor,
+                  filter: gradeGlow(grade),
+                }}
                 draggable={false}
               />
             ) : null}

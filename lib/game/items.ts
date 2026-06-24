@@ -61,6 +61,20 @@ export function gradeStyle(grade: number): { color: string; borderColor: string 
   return { color: c, borderColor: `${c}66` };
 }
 
+/**
+ * Grade-coloured glow for item icons, echoing the in-game rarity aura.
+ * Returns a CSS `filter` value, or undefined for low grades (no glow on
+ * Common/Uncommon so the higher tiers actually stand out). Blur + opacity
+ * ramp up with grade so a Cosmic item shines noticeably brighter than a Rare.
+ */
+export function gradeGlow(grade: number): string | undefined {
+  if (grade < 2) return undefined; // Common / Uncommon: no aura
+  const c = gradeInfo(grade).color;
+  const blur = grade >= 7 ? 6 : grade >= 5 ? 5 : grade >= 3 ? 4 : 3;
+  const alpha = grade >= 5 ? "cc" : grade >= 3 ? "aa" : "88";
+  return `drop-shadow(0 0 ${blur}px ${c}${alpha})`;
+}
+
 // Thai labels for equipment slots and sprite types (detail dialog).
 export const SLOT_LABELS: Record<string, string> = {
   weapon: "อาวุธ",
