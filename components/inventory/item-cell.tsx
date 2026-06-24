@@ -7,6 +7,7 @@ import {
   itemDisplayName,
   enchantTotal,
 } from "@/lib/game/items";
+import { itemPrice, formatBahtCompact } from "@/lib/game/prices";
 import { cn } from "@/lib/utils";
 
 export function ItemCell({
@@ -21,6 +22,7 @@ export function ItemCell({
   const enchants = enchantTotal(item);
   const name = itemDisplayName(item.itemKey);
   const icon = itemIconUrl(item.itemKey);
+  const price = itemPrice(item.itemKey);
 
   return (
     <button
@@ -64,6 +66,11 @@ export function ItemCell({
       ) : null}
       {item.isBlocked ? (
         <Lock className="absolute right-1 top-1 h-3 w-3 text-muted-foreground" />
+      ) : null}
+      {price?.value != null ? (
+        <span className="absolute bottom-0.5 right-0.5 rounded bg-background/85 px-1 text-[8px] font-semibold leading-tight text-emerald-400">
+          {formatBahtCompact(price.value)}
+        </span>
       ) : null}
     </button>
   );
