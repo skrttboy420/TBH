@@ -13,9 +13,10 @@ import { decodeItemKey, itemCatalogEntry, ITEM_GRADES } from "./items";
 // move slowly enough that a cached snapshot reflects real resale value well.
 // ---------------------------------------------------------------------------
 export interface PriceRow {
-  lowest: number | null; // cheapest current sell listing
+  lowest: number | null; // cheapest current sell listing ("ราคาขาย" / ask)
   median: number | null; // median of recent sales ("อัตรากลาง")
   volume: number; // units sold in the last 24h
+  buyOrder?: number | null; // highest current buy order ("ราคาซื้อ" / bid)
 }
 
 interface PriceSnapshot {
@@ -55,8 +56,9 @@ export function marketHashName(itemKey: number): string | null {
 
 export interface ItemPrice {
   hashName: string;
-  lowest: number | null;
-  median: number | null;
+  lowest: number | null; // lowest current sell listing (the "ask")
+  median: number | null; // median of recent sales
+  buyOrder: number | null; // highest current buy order (the "bid")
   volume: number;
   value: number | null; // median preferred, else lowest listing
   listed: boolean; // present in the price snapshot
@@ -68,10 +70,51 @@ export function itemPrice(itemKey: number): ItemPrice | null {
   if (!hashName) return null;
   const row = SNAP.prices[hashName];
   if (!row) {
-    return { hashName, lowest: null, median: null, volume: 0, value: null, listed: false };
+    return { hashName, lowest: null, median: null, buyOrder: null, volume: 0, value: null, listed: false };
   }
   const value = row.median ?? row.lowest ?? null;
-  return { hashName, lowest: row.lowest, median: row.median, volume: row.volume, value, listed: true };
+  return {
+    hashName,
+    lowest: row.lowest,
+    median: row.median,
+    buyOrder: row.buyOrder ?? null,
+    volume: row.volume,
+    value,
+    listed: true,
+  };
+}
+
+// ---------------------------------------------------------------------------
+// Price metrics — which number to treat as an item's worth.
+//   median : มูลค่ากลางจากยอดขายล่าสุด — the realistic resale value (default).
+//   sell   : ราคาตั้งขายต่ำสุด (lowest listing) — can be wildly off for illiquid
+//            items, so it's a reference, not the default.
+//   buy    : ราคารับซื้อสูงสุด (highest buy order) — what you'd get selling now.
+//            Only available when the snapshot was built with a logged-in Steam
+//            session; absent in the anonymous snapshot, so the UI hides it then.
+// ---------------------------------------------------------------------------
+export type PriceMetric = "median" | "sell" | "buy";
+
+export const PRICE_METRICS: { key: PriceMetric; th: string; hint: string }[] = [
+  { key: "median", th: "ราคากลาง", hint: "มูลค่ากลางจากยอดขายล่าสุด (แนะนำ)" },
+  { key: "sell", th: "ราคาตั้งขาย", hint: "ราคาตั้งขายต่ำสุดในตลาดตอนนี้" },
+  { key: "buy", th: "ราคารับซื้อ", hint: "ราคารับซื้อสูงสุด — ขายได้ทันทีเท่านี้" },
+];
+
+/** The value of an item under a given metric, or null when unavailable. */
+export function priceByMetric(p: ItemPrice | null, metric: PriceMetric): number | null {
+  if (!p) return null;
+  if (metric === "sell") return p.lowest;
+  if (metric === "buy") return p.buyOrder;
+  return p.median ?? p.lowest; // "median" with a sensible fallback
+}
+
+/** Whether any snapshot row carries buy-order data (drives the "buy" toggle). */
+export function hasBuyOrders(): boolean {
+  for (const k in SNAP.prices) {
+    if (SNAP.prices[k]?.buyOrder != null) return true;
+  }
+  return false;
 }
 
 /** Public Steam Market listing URL for a market hash name. */

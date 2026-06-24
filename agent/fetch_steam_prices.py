@@ -50,12 +50,13 @@ GRADE_EN = [
 ]
 
 
-def get(url: str, tries: int = 5):
+def _fetch(url: str, tries: int = 5) -> str | None:
+    """Raw text fetch with Steam 429 backoff."""
     for i in range(tries):
         try:
             req = urllib.request.Request(url, headers=UA)
             with urllib.request.urlopen(req, timeout=30) as r:
-                return json.loads(r.read().decode("utf-8"))
+                return r.read().decode("utf-8")
         except urllib.error.HTTPError as e:
             if e.code == 429:
                 wait = 8 * (i + 1)
@@ -70,6 +71,56 @@ def get(url: str, tries: int = 5):
                 print(f"  ERR {ex}")
             time.sleep(3)
     return None
+
+
+def get(url: str, tries: int = 5):
+    txt = _fetch(url, tries)
+    if txt is None:
+        return None
+    try:
+        return json.loads(txt)
+    except Exception:  # noqa: BLE001
+        return None
+
+
+# Steam's "buy order" (what a buyer is willing to pay right now) isn't in
+# priceoverview — it lives in the order histogram, keyed by a numeric
+# item_nameid we scrape from the listing page. This is the realistic
+# *instant-sell* value (ราคาขาย) vs. the lowest listing (ราคาซื้อ).
+_NAMEID_RE = re.compile(r"Market_LoadOrderSpread\(\s*(\d+)\s*\)")
+
+
+def item_nameid(hash_name: str) -> str | None:
+    url = (
+        f"https://steamcommunity.com/market/listings/{APP}/"
+        f"{urllib.parse.quote(hash_name)}"
+    )
+    html = _fetch(url, tries=3)
+    if not html:
+        return None
+    m = _NAMEID_RE.search(html)
+    return m.group(1) if m else None
+
+
+def buy_order_for(hash_name: str) -> float | None:
+    """Highest current buy order in THB, or None when there's no buy order."""
+    nid = item_nameid(hash_name)
+    if not nid:
+        return None
+    time.sleep(DELAY)
+    d = get(
+        f"https://steamcommunity.com/market/itemordershistogram"
+        f"?country=TH&language=english&currency={CURRENCY}&item_nameid={nid}&norender=1"
+    )
+    if not d or not d.get("success"):
+        return None
+    raw = d.get("highest_buy_order")  # minor units (satang), e.g. "1835"
+    if raw in (None, "", "null"):
+        return None
+    try:
+        return int(raw) / 100.0
+    except (TypeError, ValueError):
+        return None
 
 
 def money(s: str | None) -> float | None:
@@ -165,6 +216,17 @@ def main() -> None:
             prices[hn] = {"lowest": None, "median": None, "volume": 0}
         if i % 15 == 0:
             print(f"  [{i+1}/{len(targets)}] {hn}: {prices[hn]}")
+        time.sleep(DELAY)
+
+    # Buy-order pass — only for items the player actually owns (the calculator
+    # only ever shows those), so we stay well under Steam's rate limit.
+    own_targets = sorted(h for h in owned if prices.get(h, {}).get("lowest") or prices.get(h, {}).get("median"))
+    print(f"buy-order pass for {len(own_targets)} owned items")
+    for i, hn in enumerate(own_targets):
+        bo = buy_order_for(hn)
+        prices[hn]["buyOrder"] = bo
+        if i % 10 == 0:
+            print(f"  buy [{i+1}/{len(own_targets)}] {hn}: {bo}")
         time.sleep(DELAY)
 
     payload = {

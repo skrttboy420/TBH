@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { Backpack, MonitorSmartphone } from "lucide-react";
+import { Backpack, MonitorSmartphone, ArrowRight } from "lucide-react";
 import { getAgents, pickAgent, getSaveState } from "@/lib/data/queries";
 import { decodeSaveState } from "@/lib/data/save";
 import { resolveItemInfo } from "@/lib/game/item-info";
-import { portfolioValue, formatBaht, PRICES_FETCHED_AT } from "@/lib/game/prices";
+import { portfolioValue, PRICES_FETCHED_AT } from "@/lib/game/prices";
 import { INVENTORY_CAPACITY, STASH_CAPACITY } from "@/lib/game/constants";
 import type { InventoryItem } from "@/lib/types/save";
 import { PageHeader } from "@/components/common/page-header";
@@ -73,17 +73,19 @@ export default async function InventoryPage({
           {value.tradableCount > 0 ? (
             <div className="mb-4 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-emerald-500/30 bg-gradient-to-br from-emerald-500/10 to-transparent px-4 py-3">
               <div>
-                <p className="text-xs font-medium text-muted-foreground">
-                  มูลค่ารวมโดยประมาณ (กระเป๋า + คลัง)
+                <p className="text-sm font-semibold text-emerald-300">
+                  มีไอเทมที่ขายได้ {value.tradableCount} ชิ้น
                 </p>
-                <p className="text-2xl font-bold text-emerald-300">{formatBaht(value.total)}</p>
-              </div>
-              <div className="text-right text-xs text-muted-foreground">
-                <p>
-                  ตีราคาได้ {value.pricedCount} จาก {value.tradableCount} ชิ้นที่ขายได้
+                <p className="text-xs text-muted-foreground">
+                  เลือกเฉพาะที่จะขาย แล้วคิดราคารวมในเครื่องคิดราคา · อัปเดต {priceDate}
                 </p>
-                <p>อิงราคา Steam Market · อัปเดต {priceDate}</p>
               </div>
+              <Button asChild size="sm" variant="secondary" className="gap-1.5">
+                <Link href={`/calculator?agent=${agent.id}`}>
+                  เปิดเครื่องคิดราคา
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              </Button>
             </div>
           ) : null}
           <InventoryBrowser
