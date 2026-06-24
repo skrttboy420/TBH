@@ -12,7 +12,7 @@ from typing import Optional
 
 from . import __version__
 from .api import Api, ApiError
-from .config import Config, load_config
+from .config import Config, app_dir, load_config
 from .control import Control
 from .diff import diff_saves
 from .es3 import read_player_save
@@ -22,7 +22,7 @@ STATE_FILENAME = "state.json"
 
 
 def _state_path() -> Path:
-    return Path(__file__).resolve().parent.parent / STATE_FILENAME
+    return app_dir() / STATE_FILENAME
 
 
 def _load_prev() -> Optional[dict]:

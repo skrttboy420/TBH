@@ -8,14 +8,32 @@ from __future__ import annotations
 
 import json
 import os
+import sys
 from dataclasses import dataclass, field
 from pathlib import Path
+
+# Production web app. Baked in so a non-technical user only has to paste a token —
+# they never need to know or type the server URL. A config.json may still override
+# it (e.g. a self-hosted/localhost server) by setting a non-empty apiBaseUrl.
+DEFAULT_API_BASE_URL = "https://tbh-topaz.vercel.app"
 
 # %USERPROFILE%/AppData/LocalLow/TesseractStudio/TaskbarHero/SaveFile_Live.es3
 DEFAULT_SAVE_RELATIVE = Path(
     "AppData/LocalLow/TesseractStudio/TaskbarHero/SaveFile_Live.es3"
 )
 CONFIG_FILENAME = "config.json"
+
+
+def app_dir() -> Path:
+    """Directory that holds config.json / state.json next to the program.
+
+    Packaged with PyInstaller (`sys.frozen`) the code runs from a temp extraction
+    dir, so these writable files must live beside the .exe (`sys.executable`).
+    In source form they sit at the agent project root (parent of this package).
+    """
+    if getattr(sys, "frozen", False):
+        return Path(sys.executable).resolve().parent
+    return Path(__file__).resolve().parent.parent
 
 
 def default_save_path() -> str:
@@ -50,7 +68,7 @@ class Controls:
 
 @dataclass
 class Config:
-    api_base_url: str = ""
+    api_base_url: str = DEFAULT_API_BASE_URL
     agent_token: str = ""
     save_path: str = ""  # empty → auto-detect
     window_title: str = "Taskbar Hero"
@@ -67,7 +85,7 @@ class Config:
 
     @classmethod
     def from_dict(cls, d: dict) -> "Config":
-        base = str(_pick(d, "apiBaseUrl", "api_base_url", default="")).rstrip("/")
+        base = str(_pick(d, "apiBaseUrl", "api_base_url", default="")).rstrip("/") or DEFAULT_API_BASE_URL
         return cls(
             api_base_url=base,
             agent_token=_pick(d, "agentToken", "agent_token", default=""),
@@ -95,8 +113,8 @@ class Config:
 
 
 def config_path() -> Path:
-    """`config.json` lives at the agent project root (parent of this package)."""
-    return Path(__file__).resolve().parent.parent / CONFIG_FILENAME
+    """`config.json` lives next to the program (see `app_dir`)."""
+    return app_dir() / CONFIG_FILENAME
 
 
 def load_config(path: Path | None = None) -> Config:

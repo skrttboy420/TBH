@@ -47,6 +47,10 @@ agent/config.json
 agent/*.log
 agent/state.json
 
+# pyinstaller build output (the committed tbh-agent.spec regenerates these)
+agent/build/
+agent/dist/
+
 # local probes / intermediate dumps (throwaway; not needed by the app)
 agent/probe_*.py
 agent/save_dump.json
