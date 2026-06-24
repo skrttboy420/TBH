@@ -3,43 +3,78 @@
 @tailwind utilities;
 
 @layer base {
+  /* Light theme (default for :root). A clean slate/indigo palette — calm
+     neutrals with a vivid indigo primary and warm amber loot accent. */
   :root {
-    /* Themed to match TBH: dark plum overlay, magenta combat energy, loot gold.
-       Sampled from the game (hell-stage magenta #ff3ea5, gold numbers #ffd24a,
-       portal cyan #2e9fd9). */
-    --background: 264 32% 7%;
-    --foreground: 300 16% 96%;
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
 
-    --card: 263 28% 10%;
-    --card-foreground: 300 16% 96%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
 
-    --popover: 264 30% 9%;
-    --popover-foreground: 300 16% 96%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 327 85% 60%; /* game magenta (combat energy) */
+    --primary: 243 75% 58%; /* indigo — deeper for contrast on light */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 262 20% 17%;
-    --secondary-foreground: 300 14% 96%;
+    --secondary: 214 32% 93%;
+    --secondary-foreground: 222 47% 11%;
 
-    --muted: 262 18% 14%;
-    --muted-foreground: 268 13% 67%;
+    --muted: 214 32% 93%;
+    --muted-foreground: 215 16% 42%;
 
-    --accent: 43 96% 57%; /* loot gold */
-    --accent-foreground: 264 45% 8%;
+    --accent: 38 92% 50%; /* loot gold / amber */
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 64% 36%; /* darker green stays readable on light */
+    --warning: 32 95% 40%;
+    --info: 199 89% 40%;
+
+    --border: 214 32% 88%;
+    --input: 214 32% 88%;
+    --ring: 243 75% 58%;
+
+    --radius: 0.65rem;
+  }
+
+  /* Dark theme (the default the app boots into — see the no-FOUC script in
+     app/layout.tsx). Deep slate navy with a bright indigo primary. */
+  .dark {
+    --background: 222 47% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 44% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 239 84% 67%; /* indigo — vivid pop on dark */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 217 33% 18%;
+    --secondary-foreground: 210 40% 96%;
+
+    --muted: 217 33% 16%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 38 92% 55%; /* loot gold / amber */
+    --accent-foreground: 222 47% 11%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 210 40% 98%;
 
     --success: 142 71% 45%;
-    --warning: 38 95% 55%;
-    --info: 197 85% 53%; /* portal cyan */
+    --warning: 38 92% 50%;
+    --info: 199 89% 48%; /* portal cyan */
 
-    --border: 262 20% 19%;
-    --input: 262 20% 19%;
-    --ring: 327 85% 60%;
-
-    --radius: 0.65rem;
+    --border: 217 33% 20%;
+    --input: 217 33% 20%;
+    --ring: 239 84% 67%;
   }
 }
 
@@ -51,7 +86,7 @@
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
-  /* Custom scrollbar for the dark gaming look */
+  /* Custom scrollbar — theme-aware via CSS vars */
   ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -72,20 +107,22 @@
   .text-balance {
     text-wrap: balance;
   }
-  /* Subtle glassy gradient used on hero cards — plum → magenta-tinted plum,
-     echoing the game's hell-stage backdrop */
+  /* Subtle glassy gradient for hero cards — card surface fading into a faint
+     indigo tint. Theme-aware: reads --card and --primary so it works in both
+     light and dark. */
   .panel-gradient {
     background: linear-gradient(
       145deg,
       hsl(var(--card)) 0%,
-      hsl(288 38% 11%) 100%
+      hsl(var(--card)) 55%,
+      hsl(var(--primary) / 0.1) 100%
     );
   }
   .glow-primary {
-    box-shadow: 0 0 24px -6px hsl(var(--primary) / 0.5);
+    box-shadow: 0 0 24px -6px hsl(var(--primary) / 0.45);
   }
   /* Loot-gold glow for accent surfaces (stage numbers, rewards) */
   .glow-accent {
-    box-shadow: 0 0 24px -6px hsl(var(--accent) / 0.5);
+    box-shadow: 0 0 24px -6px hsl(var(--accent) / 0.45);
   }
 }

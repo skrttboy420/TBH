@@ -93,17 +93,17 @@ export function ItemDetailDialog({
               <div>
                 <p className="mb-1.5 text-sm font-semibold text-muted-foreground">ราคาตลาด Steam</p>
                 {price.value != null ? (
-                  <div className="space-y-1.5 rounded-md border border-emerald-500/30 bg-emerald-500/10 px-3 py-2.5">
+                  <div className="space-y-1.5 rounded-md border border-success/30 bg-success/10 px-3 py-2.5">
                     <div className="flex items-baseline justify-between gap-2">
                       <span className="text-xs text-muted-foreground">อัตรากลาง (median)</span>
-                      <span className="text-xl font-bold text-emerald-300">
+                      <span className="text-xl font-bold text-success">
                         {formatBaht(price.median ?? price.value)}
                       </span>
                     </div>
                     {price.lowest != null ? (
                       <div className="flex items-baseline justify-between gap-2 text-xs">
                         <span className="text-muted-foreground">ตั้งขายต่ำสุดตอนนี้</span>
-                        <span className="font-semibold text-emerald-300/90">
+                        <span className="font-semibold text-success/90">
                           {formatBaht(price.lowest)}
                         </span>
                       </div>
@@ -118,7 +118,7 @@ export function ItemDetailDialog({
                       href={steamMarketUrl(price.hashName)}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-1 pt-0.5 text-xs font-medium text-emerald-400 hover:underline"
+                      className="inline-flex items-center gap-1 pt-0.5 text-xs font-medium text-success hover:underline"
                     >
                       ดูในตลาด Steam
                       <ExternalLink className="h-3 w-3" />
@@ -154,7 +154,7 @@ export function ItemDetailDialog({
                   {info.inherentStats.map((s, i) => (
                     <li
                       key={i}
-                      className="rounded-md border border-emerald-500/30 bg-emerald-500/10 px-3 py-2 text-sm text-emerald-300"
+                      className="rounded-md border border-success/30 bg-success/10 px-3 py-2 text-sm text-success"
                     >
                       {s}
                     </li>

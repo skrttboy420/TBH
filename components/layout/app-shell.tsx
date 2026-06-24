@@ -6,6 +6,7 @@ import { Swords, MoreHorizontal } from "lucide-react";
 import { NAV_ITEMS, type NavItem } from "@/lib/nav";
 import { cn } from "@/lib/utils";
 import { UserMenu } from "@/components/layout/user-menu";
+import { ThemeToggle } from "@/components/common/theme-toggle";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -116,7 +117,10 @@ export function AppShell({
             <Logo />
           </div>
           <div className="hidden lg:block" />
-          <UserMenu email={user.email} name={user.name} />
+          <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <UserMenu email={user.email} name={user.name} />
+          </div>
         </header>
 
         {/* Page content — pad bottom on mobile for the bottom nav */}

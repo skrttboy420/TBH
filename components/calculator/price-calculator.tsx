@@ -131,11 +131,11 @@ export function PriceCalculator({ items }: { items: CalcItem[] }) {
   return (
     <div className="space-y-4">
       {/* Sticky total bar */}
-      <div className="sticky top-16 z-20 rounded-xl border border-emerald-500/30 bg-gradient-to-br from-emerald-500/10 to-transparent px-4 py-3 backdrop-blur lg:top-20">
+      <div className="sticky top-16 z-20 rounded-xl border border-success/30 bg-gradient-to-br from-success/10 to-transparent px-4 py-3 backdrop-blur lg:top-20">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div>
             <p className="text-xs font-medium text-muted-foreground">มูลค่ารวมที่เลือก</p>
-            <p className="text-2xl font-bold text-emerald-300">{formatBaht(totals.total)}</p>
+            <p className="text-2xl font-bold text-success">{formatBaht(totals.total)}</p>
             <p className="text-xs text-muted-foreground">
               {selectedCount === 0
                 ? "เลือกไอเทมที่จะขายเพื่อดูราคารวม"
@@ -159,23 +159,26 @@ export function PriceCalculator({ items }: { items: CalcItem[] }) {
 
       {/* Toolbar: metric + sort */}
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <div className="inline-flex rounded-lg border border-border bg-card/40 p-0.5">
-          {metrics.map((m) => (
-            <button
-              key={m.key}
-              type="button"
-              onClick={() => setMetric(m.key)}
-              title={m.hint}
-              className={cn(
-                "rounded-md px-3 py-1.5 text-xs font-medium transition-colors",
-                metric === m.key
-                  ? "bg-primary/20 text-primary"
-                  : "text-muted-foreground hover:text-foreground",
-              )}
-            >
-              {m.th}
-            </button>
-          ))}
+        <div className="flex items-center gap-2">
+          <span className="hidden text-xs text-muted-foreground sm:inline">ตีราคาจาก</span>
+          <div className="inline-flex rounded-lg border border-border bg-card/40 p-0.5">
+            {metrics.map((m) => (
+              <button
+                key={m.key}
+                type="button"
+                onClick={() => setMetric(m.key)}
+                title={m.hint}
+                className={cn(
+                  "rounded-md px-3 py-1.5 text-xs font-medium transition-colors",
+                  metric === m.key
+                    ? "bg-primary/20 text-primary"
+                    : "text-muted-foreground hover:text-foreground",
+                )}
+              >
+                {m.th}
+              </button>
+            ))}
+          </div>
         </div>
         <div className="inline-flex items-center gap-2">
           <ArrowDownUp className="h-3.5 w-3.5 text-muted-foreground" />
@@ -192,8 +195,16 @@ export function PriceCalculator({ items }: { items: CalcItem[] }) {
       </div>
 
       <p className="text-xs text-muted-foreground">
-        {metrics.find((m) => m.key === metric)?.hint}
+        แสดงทุกราคาให้เทียบเอง — ยอดรวมคิดจาก{" "}
+        <span className="font-medium text-foreground">
+          {metrics.find((m) => m.key === metric)?.th}
+        </span>
       </p>
+      {!showBuy ? (
+        <p className="text-xs text-muted-foreground/70">
+          * ราคาซื้อ (bid) จะปรากฏเมื่ออัปเดตราคาด้วยบัญชี Steam ที่ล็อกอินแล้ว
+        </p>
+      ) : null}
 
       {/* Item list */}
       <ul className="space-y-1.5">
@@ -217,14 +228,14 @@ export function PriceCalculator({ items }: { items: CalcItem[] }) {
                 className={cn(
                   "flex cursor-pointer items-center gap-3 rounded-lg border px-3 py-2 transition-colors",
                   isSel
-                    ? "border-emerald-500/50 bg-emerald-500/10"
+                    ? "border-success/50 bg-success/10"
                     : "border-border bg-card/40 hover:bg-secondary/50",
                 )}
               >
                 <span
                   className={cn(
                     "flex h-5 w-5 shrink-0 items-center justify-center rounded border transition-colors",
-                    isSel ? "border-emerald-400 bg-emerald-500 text-white" : "border-muted-foreground/50",
+                    isSel ? "border-success bg-success text-white" : "border-muted-foreground/50",
                   )}
                 >
                   {isSel ? <Check className="h-3.5 w-3.5" /> : null}
@@ -257,18 +268,43 @@ export function PriceCalculator({ items }: { items: CalcItem[] }) {
                   </p>
                 </div>
 
-                <div className="shrink-0 text-right">
-                  <p
-                    className={cn(
-                      "text-sm font-bold tabular-nums",
-                      r.value != null ? "text-emerald-300" : "text-muted-foreground",
-                    )}
-                  >
-                    {r.value != null ? formatBaht(r.value) : "—"}
-                  </p>
-                  {r.price?.median != null && metric !== "median" ? (
-                    <p className="text-[10px] text-muted-foreground">กลาง {formatBaht(r.price.median)}</p>
-                  ) : null}
+                {/* All prices side by side so you can compare; the metric that
+                    feeds the running total is highlighted. */}
+                <div className="shrink-0 space-y-0.5">
+                  {metrics.map((m) => {
+                    const v = priceByMetric(r.price, m.key);
+                    const active = m.key === metric;
+                    return (
+                      <div
+                        key={m.key}
+                        className={cn(
+                          "flex items-center justify-end gap-2 rounded px-1.5 py-0.5",
+                          active && "bg-primary/10",
+                        )}
+                      >
+                        <span
+                          className={cn(
+                            "text-[10px] leading-none",
+                            active ? "font-semibold text-primary" : "text-muted-foreground",
+                          )}
+                        >
+                          {m.th}
+                        </span>
+                        <span
+                          className={cn(
+                            "w-[76px] text-right text-xs font-bold tabular-nums",
+                            v == null
+                              ? "text-muted-foreground/40"
+                              : active
+                                ? "text-primary"
+                                : "text-foreground",
+                          )}
+                        >
+                          {formatBaht(v)}
+                        </span>
+                      </div>
+                    );
+                  })}
                 </div>
 
                 <button

@@ -96,9 +96,9 @@ export function itemPrice(itemKey: number): ItemPrice | null {
 export type PriceMetric = "median" | "sell" | "buy";
 
 export const PRICE_METRICS: { key: PriceMetric; th: string; hint: string }[] = [
-  { key: "median", th: "ราคากลาง", hint: "มูลค่ากลางจากยอดขายล่าสุด (แนะนำ)" },
-  { key: "sell", th: "ราคาตั้งขาย", hint: "ราคาตั้งขายต่ำสุดในตลาดตอนนี้" },
-  { key: "buy", th: "ราคารับซื้อ", hint: "ราคารับซื้อสูงสุด — ขายได้ทันทีเท่านี้" },
+  { key: "median", th: "อัตรากลาง", hint: "มูลค่ากลางจากยอดขายล่าสุด (แนะนำ)" },
+  { key: "sell", th: "ราคาขาย", hint: "ราคาตั้งขายต่ำสุดในตลาดตอนนี้" },
+  { key: "buy", th: "ราคาซื้อ", hint: "ราคารับซื้อสูงสุด — ขายได้ทันทีเท่านี้" },
 ];
 
 /** The value of an item under a given metric, or null when unavailable. */

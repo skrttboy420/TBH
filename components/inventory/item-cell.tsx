@@ -70,7 +70,7 @@ export function ItemCell({
         <Lock className="absolute right-1 top-1 h-3 w-3 text-muted-foreground" />
       ) : null}
       {price?.value != null ? (
-        <span className="absolute bottom-0.5 right-0.5 rounded bg-background/85 px-1 text-[8px] font-semibold leading-tight text-emerald-400">
+        <span className="absolute bottom-0.5 right-0.5 rounded bg-background/85 px-1 text-[8px] font-semibold leading-tight text-success">
           {formatBahtCompact(price.value)}
         </span>
       ) : null}

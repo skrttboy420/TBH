@@ -71,9 +71,9 @@ export default async function InventoryPage({
       ) : (
         <>
           {value.tradableCount > 0 ? (
-            <div className="mb-4 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-emerald-500/30 bg-gradient-to-br from-emerald-500/10 to-transparent px-4 py-3">
+            <div className="mb-4 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-success/30 bg-gradient-to-br from-success/10 to-transparent px-4 py-3">
               <div>
-                <p className="text-sm font-semibold text-emerald-300">
+                <p className="text-sm font-semibold text-success">
                   มีไอเทมที่ขายได้ {value.tradableCount} ชิ้น
                 </p>
                 <p className="text-xs text-muted-foreground">
