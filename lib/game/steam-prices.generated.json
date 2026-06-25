@@ -7,602 +7,722 @@
 "Amber Gem": {
 "lowest": 729.28,
 "median": 234.44,
-"volume": 1
+"volume": 1,
+"buyOrder": 1.04
 },
 "Amber Ring (Arcana) A": {
 "lowest": 25.12,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Amethyst Ring (Beyond) A": {
 "lowest": 1316.93,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 101.73
 },
 "Azure Staff (Legendary) A": {
 "lowest": 10870.21,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Bastard Sword (Immortal) A": {
 "lowest": 3774.64,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 4.04
 },
 "Beast Bolt (Arcana) A": {
 "lowest": 132.45,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Blessed Scepter (Legendary) A": {
 "lowest": 2452.0,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Blessed Tome (Legendary) A": {
 "lowest": 1429.84,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 1.61
 },
 "Bloodstone": {
 "lowest": 611.41,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 4.16
 },
 "Bronze Ingot": {
 "lowest": 729.28,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 0.99
 },
 "Celestial Earring (Arcana) A": {
 "lowest": 83.08,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Chain Boots (Arcana) A": {
 "lowest": 3774.64,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 4.04
 },
 "Chain Boots (Legendary) A": {
 "lowest": 7297.11,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Chain Gloves (Immortal) A": {
 "lowest": 6363.23,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 2.9
 },
 "Chain Helmet (Immortal) A": {
 "lowest": null,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 3.58
 },
 "Chain Helmet (Legendary) A": {
 "lowest": 703.31,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 0.99
 },
 "Chain Mail (Legendary) A": {
 "lowest": 6356.79,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 0.99
 },
 "Chaos Shard": {
 "lowest": 509.15,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 1.71
 },
 "Composite Bow (Legendary) A": {
 "lowest": 2344.4,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Copper Amulet (Immortal) A": {
 "lowest": 1.3,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Copper Nugget": {
 "lowest": 2344.4,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 2.29
 },
 "Crystal Quartz": {
 "lowest": 2574.58,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 1.31
 },
 "Darksteel Ingot": {
 "lowest": 505.68,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 8.05
 },
 "Devout Scepter (Legendary) A": {
 "lowest": 2344.4,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 1.04
 },
 "Dimensional Gloves (Divine) A": {
 "lowest": 7354.76,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 985.44
 },
 "Dimensional Helmet (Arcana) A": {
 "lowest": 0.99,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Dimensional Scepter (Beyond) A": {
 "lowest": null,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 55.02
 },
 "Dimensional Shield (Celestial) A": {
 "lowest": 729.28,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Dimensional Tome (Arcana) A": {
 "lowest": 2584.83,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 40.45
 },
 "Dusk Bow (Legendary) A": {
 "lowest": 51491.72,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Eclipse Amulet (Arcana) A": {
 "lowest": 147.4,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Eclipse Bracer (Beyond) A": {
 "lowest": 1099.52,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Emerald Bracer (Arcana) A": {
 "lowest": 78.09,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Empire Boots (Legendary) A": {
 "lowest": 11722.0,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Ethereal Bracer (Arcana) A": {
 "lowest": 117.22,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Ethereal Earring (Arcana) A": {
 "lowest": 152.74,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Ethereal Earring (Legendary) A": {
 "lowest": 1.39,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Fate Tome (Beyond) A": {
 "lowest": 243.01,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Fighter's Helmet (Cosmic) A": {
 "lowest": 3648.98,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Fighter's Helmet (Divine) A": {
 "lowest": 48926.46,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 1976.68
 },
 "Frozen Orb (Legendary) A": {
 "lowest": 6363.23,
 "median": 2109.97,
-"volume": 1
+"volume": 1,
+"buyOrder": 1.62
 },
 "Gale Arrow (Legendary) A": {
 "lowest": 3516.6,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 1.64
 },
 "Garnet": {
 "lowest": 490.4,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 1.88
 },
 "Goblin Hide": {
 "lowest": 1.29,
 "median": 1.28,
-"volume": 2547
+"volume": 2547,
+"buyOrder": null
 },
 "Gold Ingot": {
 "lowest": 729.28,
 "median": 490.41,
-"volume": 1
+"volume": 1,
+"buyOrder": 0.99
 },
 "Great Sword (Legendary) A": {
 "lowest": 2626.4,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Healing Herb": {
 "lowest": 288.9,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Hunter's Arrow (Legendary) A": {
 "lowest": 1505.13,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 2.63
 },
 "Iron Boots (Immortal) A": {
 "lowest": 23344.83,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 3.31
 },
 "Iron Boots (Legendary) A": {
 "lowest": 6356.79,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Iron Gloves (Legendary) A": {
 "lowest": 36587.97,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Iron Helmet (Legendary) A": {
 "lowest": 468.88,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Iron Plate (Legendary) A": {
 "lowest": 20385.96,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Iron Scepter (Legendary) A": {
 "lowest": 23444.01,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 0.99
 },
 "Iron Tome (Legendary) A": {
 "lowest": 677.5,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 0.99
 },
 "Jade Stone": {
 "lowest": 70.32,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 0.99
 },
 "Knight Boots (Legendary) A": {
 "lowest": 6363.23,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 0.99
 },
 "Knight Gloves (Legendary) A": {
 "lowest": 3450.0,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Knight Helmet (Immortal) A": {
 "lowest": 1172.2,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 3.31
 },
 "Knight Sword (Arcana) A": {
 "lowest": 858.2,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 2.9
 },
 "Knight Sword (Immortal) A": {
 "lowest": 813.11,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 2.73
 },
 "Knight's Tome (Legendary) A": {
 "lowest": 6363.23,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Leather": {
 "lowest": 2.81,
 "median": 2.8,
-"volume": 4303
+"volume": 4303,
+"buyOrder": 2.05
 },
 "Limitless Bow (Beyond) A": {
 "lowest": 166.54,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Limitless Crossbow (Arcana) A": {
 "lowest": 1.39,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Limitless Crossbow (Beyond) A": {
 "lowest": 251.55,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Limitless Hatchet (Arcana) A": {
 "lowest": 67.53,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Long Bow (Immortal) A": {
 "lowest": 2768.23,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 3.1
 },
 "Long Bow (Legendary) A": {
 "lowest": 2452.0,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Long Staff (Legendary) A": {
 "lowest": 6363.23,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Long Sword (Legendary) A": {
 "lowest": 703.31,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Minor Amethyst": {
 "lowest": 11.92,
 "median": 10.31,
-"volume": 2962
+"volume": 2962,
+"buyOrder": 1
 },
 "Minor Emerald": {
 "lowest": 754.92,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 1.09
 },
 "Minor Ruby": {
 "lowest": 1509.85,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 1
 },
 "Minor Sapphire": {
 "lowest": 1.39,
 "median": 1.64,
-"volume": 3851
+"volume": 3851,
+"buyOrder": null
 },
 "Minor Topaz": {
 "lowest": 1887.31,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 0.99
 },
 "Moonstone": {
 "lowest": 334.01,
 "median": 332.5,
-"volume": 1
+"volume": 1,
+"buyOrder": 66.05
 },
 "Mystic Armor (Beyond) A": {
 "lowest": 5.73,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Mystic Boots (Beyond) A": {
 "lowest": 59.23,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Mystic Bow (Legendary) A": {
 "lowest": 1172.2,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 1.46
 },
 "Obsidian Shard": {
 "lowest": 729.28,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 1.04
 },
 "Ogre Blood": {
 "lowest": 234.44,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 1.04
 },
 "Opal": {
 "lowest": 1323.47,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 7.74
 },
 "Pearl": {
 "lowest": 7297.11,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 2.62
 },
 "Poisonous Herb": {
 "lowest": 754.92,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 1.7
 },
 "Prophecy Orb (Legendary) A": {
 "lowest": 1406.63,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 0.99
 },
 "Radiant Shield (Divine) A": {
 "lowest": 7297.11,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 330.9
 },
 "Rapier (Legendary) A": {
 "lowest": 1463.52,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Rune Sword (Legendary) A": {
 "lowest": 1992.74,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 1.1
 },
 "Sacred Staff (Celestial) A": {
 "lowest": 1313.39,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Sage Staff (Immortal) A": {
 "lowest": 2561.16,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 2.9
 },
 "Sage Staff (Legendary) A": {
 "lowest": 1081.58,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 1.04
 },
 "Sapphire": {
 "lowest": 729.28,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 0.99
 },
 "Shine Boots (Celestial) A": {
 "lowest": 2731.68,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Shine Gloves (Beyond) A": {
 "lowest": 6075.04,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 25.99
 },
 "Short Hatchet (Legendary) A": {
 "lowest": 1149.0,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 1.74
 },
 "Silver Ingot": {
 "lowest": 729.28,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Skeleton Bone": {
 "lowest": 1.29,
 "median": 1.64,
-"volume": 2199
+"volume": 2199,
+"buyOrder": null
 },
 "Slime Jelly": {
 "lowest": 1.29,
 "median": 1.28,
-"volume": 2924
+"volume": 2924,
+"buyOrder": null
 },
 "Soulstone - Hell": {
 "lowest": 2334.32,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 1.68
 },
 "Soulstone - Nightmare": {
 "lowest": 481.51,
 "median": 203.67,
-"volume": 1
+"volume": 1,
+"buyOrder": 1.04
 },
 "Soulstone - Normal": {
 "lowest": 119.26,
 "median": 118.82,
-"volume": 5
+"volume": 5,
+"buyOrder": 1.42
 },
 "Soulstone - Torment": {
 "lowest": 656.42,
 "median": 164.54,
-"volume": 3
+"volume": 3,
+"buyOrder": 5.37
 },
 "Spider Silk": {
 "lowest": null,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 2.36
 },
 "Stardust Ingot": {
 "lowest": 452.95,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 1.47
 },
 "Steel Axe (Immortal) A": {
 "lowest": null,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 2.49
 },
 "Steel Scepter (Legendary) A": {
 "lowest": 407.69,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Stone": {
 "lowest": 171.88,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 3.92
 },
 "Sunstone": {
 "lowest": 351.63,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 68.81
 },
 "Topaz": {
 "lowest": 296.56,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 0.99
 },
 "Vengeance Sword (Beyond) A": {
 "lowest": 8.35,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Void Iron": {
 "lowest": 490.4,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 2.1
 },
 "War Axe (Arcana) A": {
 "lowest": 5861.0,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 1.31
 },
 "War Bow (Legendary) A": {
 "lowest": 6363.23,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "War Helmet (Legendary) A": {
 "lowest": 820.54,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 0.99
 },
 "War Tome (Beyond) A": {
 "lowest": 53.04,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Witch Staff (Arcana) A": {
 "lowest": null,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": 2.91
 },
 "Witch Staff (Legendary) A": {
 "lowest": null,
 "median": null,
-"volume": 0
+"volume": 0,
+"buyOrder": null
 },
 "Wolf Fang": {
 "lowest": 127.25,
 "median": 98.51,
-"volume": 2
+"volume": 2,
+"buyOrder": 0.99
 },
 "Wood": {
 "lowest": 2.29,
 "median": 2.3,
-"volume": 6777
+"volume": 6777,
+"buyOrder": null
 }
 }
 }
