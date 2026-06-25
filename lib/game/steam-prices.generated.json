@@ -1,8 +1,8 @@
 {
 "currency": "THB",
 "appId": 3678970,
-"fetchedAt": "2026-06-25T16:05:13.389982+00:00",
-"count": 120,
+"fetchedAt": "2026-06-25T17:00:11.891403+00:00",
+"count": 158,
 "prices": {
 "Amber Gem": {
 "lowest": 1.06,
@@ -722,6 +722,234 @@
 "lowest": 0.99,
 "median": 1.01,
 "volume": 4275,
+"buyOrder": null
+},
+"Amethyst": {
+"lowest": 8.43,
+"median": 7.17,
+"volume": 14230,
+"buyOrder": null
+},
+"Arcane Crystal": {
+"lowest": 7.19,
+"median": 5.8,
+"volume": 3184,
+"buyOrder": null
+},
+"Arcane Orb (Legendary) A": {
+"lowest": 1.88,
+"median": 1.81,
+"volume": 136,
+"buyOrder": null
+},
+"Comet Staff (Legendary) A": {
+"lowest": 1.24,
+"median": 1.24,
+"volume": 665,
+"buyOrder": null
+},
+"Coral Piece": {
+"lowest": 0.99,
+"median": 1.02,
+"volume": 5462,
+"buyOrder": null
+},
+"Demon Blood": {
+"lowest": 7.51,
+"median": 7.15,
+"volume": 3077,
+"buyOrder": null
+},
+"Devout Scepter (Arcana) A": {
+"lowest": 6.56,
+"median": 5.3,
+"volume": 1074,
+"buyOrder": null
+},
+"Dimensional Gloves (Legendary) A": {
+"lowest": 5.39,
+"median": 3.77,
+"volume": 1039,
+"buyOrder": null
+},
+"Ethereal Bracer (Legendary) A": {
+"lowest": 9.66,
+"median": 9.41,
+"volume": 454,
+"buyOrder": null
+},
+"Fate Arrow (Legendary) A": {
+"lowest": 4.96,
+"median": 4.52,
+"volume": 363,
+"buyOrder": null
+},
+"Harpy Feather": {
+"lowest": 3.85,
+"median": 4.08,
+"volume": 2240,
+"buyOrder": null
+},
+"Haste Arrow (Immortal) A": {
+"lowest": 12.12,
+"median": 11.27,
+"volume": 1591,
+"buyOrder": null
+},
+"Iron Gloves (Immortal) A": {
+"lowest": 5.09,
+"median": 4.65,
+"volume": 563,
+"buyOrder": null
+},
+"Iron Ingot": {
+"lowest": 1.0,
+"median": 1.02,
+"volume": 4610,
+"buyOrder": null
+},
+"Lapis Lazuli": {
+"lowest": 10.39,
+"median": 9.52,
+"volume": 10369,
+"buyOrder": null
+},
+"Limitless Axe (Immortal) A": {
+"lowest": 5.14,
+"median": 5.05,
+"volume": 108,
+"buyOrder": null
+},
+"Limitless Bow (Immortal) A": {
+"lowest": 5.8,
+"median": 5.16,
+"volume": 3355,
+"buyOrder": null
+},
+"Limitless Crossbow (Legendary) A": {
+"lowest": 3.07,
+"median": 2.52,
+"volume": 74,
+"buyOrder": null
+},
+"Mandrake Root": {
+"lowest": 1.98,
+"median": 2.51,
+"volume": 1719,
+"buyOrder": null
+},
+"Mushroom Spore": {
+"lowest": 1.05,
+"median": 1.13,
+"volume": 984,
+"buyOrder": null
+},
+"Mystic Boots (Immortal) A": {
+"lowest": 5.95,
+"median": 5.79,
+"volume": 627,
+"buyOrder": null
+},
+"Mystic Bow (Immortal) A": {
+"lowest": 4.29,
+"median": 3.67,
+"volume": 1647,
+"buyOrder": null
+},
+"Mystic Gloves (Immortal) A": {
+"lowest": 5.87,
+"median": 5.1,
+"volume": 696,
+"buyOrder": null
+},
+"Mystic Topaz": {
+"lowest": 3.6,
+"median": 3.67,
+"volume": 2748,
+"buyOrder": null
+},
+"Nightshade Extract": {
+"lowest": 4.11,
+"median": 4.25,
+"volume": 2033,
+"buyOrder": null
+},
+"Obsidian Bracer (Legendary) A": {
+"lowest": 10.58,
+"median": 9.28,
+"volume": 306,
+"buyOrder": null
+},
+"Ruby": {
+"lowest": 2.12,
+"median": 1.93,
+"volume": 4655,
+"buyOrder": null
+},
+"Rune Orb (Arcana) A": {
+"lowest": 15.67,
+"median": 10.28,
+"volume": 396,
+"buyOrder": null
+},
+"Rune Scepter (Arcana) A": {
+"lowest": 5.79,
+"median": 3.96,
+"volume": 2233,
+"buyOrder": null
+},
+"Shine Boots (Immortal) A": {
+"lowest": 7.55,
+"median": 6.28,
+"volume": 630,
+"buyOrder": null
+},
+"Shine Boots (Legendary) A": {
+"lowest": 2.28,
+"median": 2.23,
+"volume": 831,
+"buyOrder": null
+},
+"Shine Gloves (Legendary) A": {
+"lowest": 2.32,
+"median": 2.17,
+"volume": 1005,
+"buyOrder": null
+},
+"Tempest Staff (Arcana) A": {
+"lowest": 18.75,
+"median": 22.28,
+"volume": 2285,
+"buyOrder": null
+},
+"Turquoise": {
+"lowest": 2.37,
+"median": 1.92,
+"volume": 4314,
+"buyOrder": null
+},
+"Vengeance Sword (Arcana) A": {
+"lowest": 10.74,
+"median": 9.05,
+"volume": 4061,
+"buyOrder": null
+},
+"War Gloves (Legendary) A": {
+"lowest": 0.99,
+"median": 1.02,
+"volume": 467,
+"buyOrder": null
+},
+"Rune Boots (Legendary) A": {
+"lowest": 1.29,
+"median": 1.28,
+"volume": 674,
+"buyOrder": null
+},
+"War Boots (Legendary) A": {
+"lowest": 1.05,
+"median": 1.32,
+"volume": 544,
 "buyOrder": null
 }
 }
